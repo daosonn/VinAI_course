@@ -1,8 +1,7 @@
 # Day 05 — Submission
 
 **Sản phẩm phân tích:** Vietnam Airlines — Chatbot NEO
-**Người nộp:** [Tên của bạn]
-**Deadline:** 23:59 08/04/2026
+
 
 ---
 
@@ -12,15 +11,15 @@
 Day05/
 ├── README.md
 ├── ux-exercise/
-│   └── analysis.md                    ← Phân tích 4 paths + gap marketing vs thực tế ✓
+│   └── analysis.md                    ← Phân tích 4 paths + gap marketing vs thực tế 
 ├── extras/
-│   └── data-flywheel.md               ← Thiết kế Data Flywheel S1–S8 ✓
+│   └── data-flywheel.md               ← Thiết kế Data Flywheel S1–S8 
 └── document/
-    ├── 4path.jpg                       ← Sketch phân tích 4 paths ✓
-    ├── gap_sketch.jpg                  ← Sketch gap marketing vs thực tế ✓
-    ├── improvement-sketch.jpg          ← Sketch as-is → to-be ✓
-    ├── chatbot-improved.jpg            ← Screenshot chatbot sau cải tiến ✓
-    └── data_flywheel.png               ← Sơ đồ Data Flywheel ✓
+    ├── 4path.jpg                       ← Sketch phân tích 4 paths 
+    ├── gap_sketch.jpg                  ← Sketch gap marketing vs thực tế 
+    ├── improvement-sketch.jpg          ← Sketch as-is → to-be 
+    ├── chatbot-improved.jpg            ← Screenshot chatbot sau cải tiến 
+    └── data_flywheel.png               ← Sơ đồ Data Flywheel 
 ```
 
 ---
