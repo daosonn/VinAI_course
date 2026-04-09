@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "description": "Các link CTA chính thức của VinFast để chatbot dẫn user đến bước tiếp theo",
+    "confidence": "HIGH — URLs từ domain chính thức vinfastauto.com"
+  },
+  "ctas": {
+    "test_drive_registration": {
+      "label": "Đăng ký lái thử",
+      "url": "https://shop.vinfastauto.com/vn_vi/dang-ky-lai-thu.html",
+      "description": "Đặt lịch lái thử trực tuyến",
+      "hotline": "1900 23 23 89"
+    },
+    "installment_calculator": {
+      "label": "Tính trả góp",
+      "url": "https://shop.vinfastauto.com/vn_vi/installment-cost",
+      "description": "Công cụ tính khoản trả hàng tháng"
+    },
+    "rolling_cost_calculator": {
+      "label": "Dự toán chi phí lăn bánh",
+      "url": "https://shop.vinfastauto.com/vn_vi/installment-cost",
+      "description": "Ước tính tổng chi phí khi mua xe"
+    },
+    "order_online": {
+      "label": "Đặt cọc mua xe",
+      "url": "https://shop.vinfastauto.com/vn_vi/dat-coc-o-to-dien-vinfast.html",
+      "description": "Đặt xe online"
+    },
+    "showroom_locator": {
+      "label": "Tìm showroom",
+      "url": "https://vinfastauto.com/vn_vi",
+      "description": "Tìm showroom và trung tâm dịch vụ gần nhất",
+      "hotline": "1900 23 23 89"
+    },
+    "charging_station_map": {
+      "label": "Tìm trạm sạc",
+      "url": "https://vinfastauto.com/vn_vi/he-thong-tram-sac",
+      "description": "Bản đồ hệ thống trạm sạc VinFast (V-Green / EVCS.VN)"
+    },
+    "compare_vehicles": {
+      "label": "So sánh xe",
+      "url": "https://vinfastauto.com/vn_vi/so-sanh-xe",
+      "description": "So sánh các mẫu xe VinFast chính thức"
+    },
+    "faq_general": {
+      "label": "Câu hỏi thường gặp",
+      "url": "https://vinfastauto.com/vn_vi/cau-hoi-thuong-gap",
+      "description": "FAQ chính thức của VinFast"
+    },
+    "after_sales_policy": {
+      "label": "Chính sách hậu mãi",
+      "url": "https://vinfastauto.com/vn_vi/chinh-sach-hau-mai",
+      "description": "Bảo hành, dịch vụ, hỗ trợ sau mua"
+    },
+    "hotline": {
+      "label": "Hotline 24/7",
+      "number": "1900 23 23 89",
+      "description": "Hỗ trợ miễn phí 24/7"
+    }
+  },
+  "vehicle_urls": {
+    "vf3": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-3",
+    "vf5": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-5-plus",
+    "vf6": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-6",
+    "vf7": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-7",
+    "vf8": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-8",
+    "vf9": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-9"
+  }
+}

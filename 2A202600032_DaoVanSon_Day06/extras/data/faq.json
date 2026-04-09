@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "categories": ["mua_xe", "tai_chinh", "sac_dien", "bao_hanh", "lai_thu", "showroom", "so_sanh", "chi_phi_lan_banh"],
+    "confidence_levels": {
+      "HIGH": "Thông tin chính thức từ VinFast",
+      "MEDIUM": "Thông tin từ nguồn thứ 3 hoặc ước tính chung ngành",
+      "LOW": "Ước tính / cần xác minh — chatbot phải thêm disclaimer"
+    }
+  },
+  "faqs": [
+    {
+      "id": "faq_001",
+      "category": "tai_chinh",
+      "question": "VinFast có hỗ trợ vay trả góp không?",
+      "answer": "Có. VinFast có chương trình vay trả góp linh hoạt, bao gồm gói chỉ trả gốc trong 2 năm đầu, sau đó lãi suất từ khoảng 10.5%/năm trở đi. Bạn có thể dùng công cụ tính trả góp trên website VinFast để ước tính khoản trả hàng tháng theo số tiền vay và kỳ hạn.",
+      "confidence_level": "HIGH",
+      "source_url": "https://shop.vinfastauto.com/vn_vi/installment-cost",
+      "cta": "installment_calculator",
+      "disclaimer": "Lãi suất và điều kiện vay có thể thay đổi theo thời điểm. Vui lòng xác nhận trực tiếp với VinFast hoặc ngân hàng đối tác."
+    },
+    {
+      "id": "faq_002",
+      "category": "tai_chinh",
+      "question": "Chi phí lăn bánh của xe VinFast là bao nhiêu?",
+      "answer": "Chi phí lăn bánh bao gồm: giá xe, thuế trước bạ (~2% tại TP.HCM, 2-12% ở các tỉnh khác), phí đăng ký, bảo hiểm bắt buộc, biển số, và các loại phí khác. Thông thường chi phí lăn bánh cao hơn giá niêm yết khoảng 10-15%. VinFast có công cụ dự toán chi phí lăn bánh trên website.",
+      "confidence_level": "MEDIUM",
+      "source_url": "https://shop.vinfastauto.com/vn_vi/installment-cost",
+      "cta": "rolling_cost_calculator",
+      "disclaimer": "Thuế trước bạ và phí địa phương có thể khác nhau tùy tỉnh/thành phố. Cần xác minh tại thời điểm mua."
+    },
+    {
+      "id": "faq_003",
+      "category": "sac_dien",
+      "question": "Sạc xe VinFast ở đâu? Có nhiều trạm sạc không?",
+      "answer": "VinFast (thông qua V-Green) có hệ thống trạm sạc trải rộng toàn quốc: trung tâm thương mại, chung cư, văn phòng, trường học, trạm xăng, bãi đỗ xe công cộng. Hiện có mặt trên 106+ quốc lộ tại Việt Nam. Bạn có thể tìm trạm sạc gần nhất qua app EVCS.VN hoặc bản đồ trên website VinFast.",
+      "confidence_level": "HIGH",
+      "source_url": "https://vinfastauto.com/vn_vi/he-thong-tram-sac",
+      "cta": "charging_station_map",
+      "disclaimer": null
+    },
+    {
+      "id": "faq_004",
+      "category": "sac_dien",
+      "question": "Sạc xe VinFast tại nhà được không? Tốn bao nhiêu tiền điện?",
+      "answer": "Có thể sạc tại nhà bằng ổ cắm thường (220V) hoặc cài đặt bộ sạc AC (Wallbox) để sạc nhanh hơn. Chi phí điện dao động tùy theo xe: VF3 cần khoảng 18.64 kWh/lần đầy, VF8 cần khoảng 87.7 kWh. Với giá điện sinh hoạt ~3.000 VND/kWh, chi phí sạc đầy VF3 khoảng ~56.000 VND, VF8 khoảng ~263.000 VND.",
+      "confidence_level": "MEDIUM",
+      "source_url": null,
+      "cta": null,
+      "disclaimer": "Chi phí điện tính theo giá điện bậc thang EVN — có thể thay đổi. Đây là ước tính tham khảo."
+    },
+    {
+      "id": "faq_005",
+      "category": "bao_hanh",
+      "question": "Bảo hành xe VinFast bao lâu?",
+      "answer": "VinFast cung cấp bảo hành: 10 năm hoặc 200.000 km (áp dụng cho hầu hết các mẫu EV), 7 năm hoặc 140.000 km cho VF5 Plus. Bảo hành áp dụng cho lỗi vật liệu, phần mềm, và gia công. Không áp dụng với hư hỏng do tai nạn, sử dụng sai, hoặc phụ tùng không chính hãng.",
+      "confidence_level": "HIGH",
+      "source_url": "https://vinfastauto.com/vn_vi/node/9096",
+      "cta": null,
+      "disclaimer": null
+    },
+    {
+      "id": "faq_006",
+      "category": "bao_hanh",
+      "question": "Pin xe VinFast có bảo hành không?",
+      "answer": "Pin xe VinFast được bảo hành trong phạm vi bảo hành chung của xe (10 năm / 200.000 km). VinFast cam kết pin giữ được ít nhất 70% dung lượng trong thời gian bảo hành.",
+      "confidence_level": "MEDIUM",
+      "source_url": "https://vinfastauto.com/vn_vi/chinh-sach-hau-mai",
+      "cta": null,
+      "disclaimer": "Điều kiện bảo hành pin cụ thể cần xác minh lại tại website hoặc showroom VinFast."
+    },
+    {
+      "id": "faq_007",
+      "category": "lai_thu",
+      "question": "Tôi có thể lái thử xe VinFast ở đâu?",
+      "answer": "Bạn có thể đăng ký lái thử trực tuyến trên website VinFast hoặc trực tiếp tại showroom. Sau khi đăng ký, VinFast sẽ xác nhận lịch hẹn qua email. Hotline hỗ trợ: 1900 23 23 89.",
+      "confidence_level": "HIGH",
+      "source_url": "https://shop.vinfastauto.com/vn_vi/dang-ky-lai-thu.html",
+      "cta": "test_drive_registration",
+      "disclaimer": null
+    },
+    {
+      "id": "faq_008",
+      "category": "showroom",
+      "question": "Showroom VinFast ở đâu?",
+      "answer": "VinFast có mạng lưới showroom, đại lý, và trung tâm dịch vụ trải rộng toàn quốc. Bạn có thể tìm showroom gần nhất trên website VinFast. Hotline hỗ trợ 24/7: 1900 23 23 89.",
+      "confidence_level": "HIGH",
+      "source_url": "https://vinfastauto.com/vn_vi",
+      "cta": "showroom_locator",
+      "disclaimer": null
+    },
+    {
+      "id": "faq_009",
+      "category": "mua_xe",
+      "question": "Có thể đặt cọc mua xe VinFast online không?",
+      "answer": "Có. Bạn có thể đặt cọc và đặt mua xe VinFast trực tuyến tại shop.vinfastauto.com. VinFast hỗ trợ toàn bộ quy trình mua xe từ tư vấn đến giao xe.",
+      "confidence_level": "HIGH",
+      "source_url": "https://shop.vinfastauto.com/vn_vi/dat-coc-o-to-dien-vinfast.html",
+      "cta": "order_online",
+      "disclaimer": null
+    },
+    {
+      "id": "faq_010",
+      "category": "so_sanh",
+      "question": "Nên chọn VF8 hay VF9?",
+      "answer": "VF8 (5 chỗ, ~1.2 tỷ) phù hợp gia đình 4-5 người, đi TP và đường dài thỉnh thoảng. VF9 (7 chỗ, từ 1.6 tỷ) phù hợp gia đình lớn ≥5 người hoặc cần thường xuyên đi xa. VF9 có quãng đường lớn hơn (594 vs 471 km WLTP) nhưng đắt hơn ~400 triệu và kích thước lớn hơn đáng kể — khó đỗ trong TP.",
+      "confidence_level": "HIGH",
+      "source_url": null,
+      "cta": "compare_vehicles",
+      "disclaimer": null
+    },
+    {
+      "id": "faq_011",
+      "category": "chi_phi_lan_banh",
+      "question": "Thuế trước bạ xe điện VinFast là bao nhiêu?",
+      "answer": "Xe điện VinFast được hưởng chính sách ưu đãi về thuế trước bạ. Hiện tại (2024-2025) xe điện được giảm 50% thuế trước bạ so với xe xăng. Thuế trước bạ xe xăng thông thường là 2-12% tùy tỉnh, vậy xe điện khoảng 1-6%. Tuy nhiên chính sách này có thể thay đổi theo thời điểm.",
+      "confidence_level": "MEDIUM",
+      "source_url": null,
+      "cta": "rolling_cost_calculator",
+      "disclaimer": "QUAN TRỌNG: Chính sách thuế ưu đãi xe điện có thể thay đổi. Cần xác minh chính sách hiện hành tại thời điểm mua với VinFast hoặc cơ quan thuế."
+    },
+    {
+      "id": "faq_012",
+      "category": "sac_dien",
+      "question": "Đi đường dài liên tỉnh bằng xe VinFast có an toàn không?",
+      "answer": "Hoàn toàn có thể. VinFast đã triển khai hệ thống sạc trên 106+ quốc lộ, đảm bảo khoảng cách giữa các trạm sạc dưới 100-150km cho các tuyến chính. Với VF8 (405km thực tế) hoặc VF9 (594km WLTP), bạn có thể di chuyển liên tỉnh thoải mái. Nên lập kế hoạch dừng sạc nhanh (~35-60 phút) ở các trạm sạc DC dọc đường.",
+      "confidence_level": "MEDIUM",
+      "source_url": "https://vinfastauto.com/vn_vi/he-thong-tram-sac",
+      "cta": "charging_station_map",
+      "disclaimer": "Mật độ trạm sạc và quãng đường thực tế phụ thuộc vào điều kiện lái xe, thời tiết, và tuyến đường."
+    },
+    {
+      "id": "faq_013",
+      "category": "mua_xe",
+      "question": "VinFast có chương trình thuê pin không? Xe điện VinFast có phải thuê pin không?",
+      "answer": "VinFast trước đây có chính sách bán xe kèm thuê pin (battery subscription), giúp giảm giá xe ban đầu và trả phí thuê pin hàng tháng. Tuy nhiên, từ khoảng giữa năm 2023, VinFast đã chuyển sang mô hình bán xe kèm pin trọn gói — tức là giá bán đã bao gồm pin, không cần thuê pin riêng. Vui lòng xác minh chính sách hiện tại tại showroom hoặc website VinFast vì có thể có thay đổi.",
+      "confidence_level": "MEDIUM",
+      "source_url": "https://vinfastauto.com/vn_vi",
+      "cta": null,
+      "disclaimer": "Chính sách bán xe / thuê pin có thể thay đổi. Cần xác minh chính sách hiện hành tại thời điểm mua."
+    },
+    {
+      "id": "faq_014",
+      "category": "mua_xe",
+      "question": "VinFast có đợt giảm giá hoặc khuyến mãi nào không?",
+      "answer": "VinFast thường xuyên có các chương trình ưu đãi như giảm giá xe, hỗ trợ phí trước bạ, tặng gói bảo dưỡng, hoặc ưu đãi lãi suất trả góp. Các chương trình khuyến mãi thay đổi theo thời điểm và khác nhau theo từng mẫu xe. Để biết chương trình ưu đãi mới nhất, bạn nên liên hệ trực tiếp showroom VinFast hoặc kiểm tra trên website shop.vinfastauto.com.",
+      "confidence_level": "MEDIUM",
+      "source_url": "https://shop.vinfastauto.com/vn_vi",
+      "cta": null,
+      "disclaimer": "Chương trình khuyến mãi thay đổi thường xuyên. Thông tin trên mang tính tham khảo, cần xác minh tại thời điểm mua."
+    }
+  ]
+}

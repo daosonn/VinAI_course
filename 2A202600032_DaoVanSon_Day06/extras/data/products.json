@@ -1,0 +1,304 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "last_updated": "2025-04",
+    "source": "vinfastauto.com/vn_vi + ccarprice.com + kbb.com",
+    "confidence_notes": {
+      "HIGH": "Dữ liệu xác minh được từ nhiều nguồn chính thức",
+      "MEDIUM": "Dữ liệu từ 1 nguồn hoặc ước tính — cần kiểm tra lại trên website",
+      "ASSUMPTION": "Giả định — chưa xác minh, cần cập nhật trước demo"
+    },
+    "currency": "VND",
+    "range_standard": "WLTP hoặc thực tế đường Việt Nam"
+  },
+  "vehicles": [
+    {
+      "id": "vf3",
+      "name": "VinFast VF 3",
+      "segment": "entry",
+      "body_type": "Mini SUV / City EV",
+      "seats": 4,
+      "price_from": 526720000,
+      "price_to": 579392000,
+      "price_display": "526 – 579 triệu VND",
+      "price_confidence": "HIGH",
+      "battery_kwh": 18.64,
+      "battery_type": "LFP",
+      "range_km": 215,
+      "range_note": "Theo WLTP, thực tế TP khoảng 180-200km",
+      "range_confidence": "HIGH",
+      "motor_hp": 40,
+      "torque_nm": 110,
+      "charging_ac_kw": 6.6,
+      "charging_dc_kw": 30,
+      "charging_time_fast": "10-70% trong 36 phút (fast charge)",
+      "dimensions_mm": "3190L x 1679W x 1622H",
+      "highlights": [
+        "Giá rẻ nhất dòng EV VinFast",
+        "Lý tưởng đi lại nội thành hàng ngày",
+        "Nhỏ gọn, dễ đỗ xe",
+        "Chi phí vận hành thấp",
+        "Bảo hành 10 năm / 200.000 km"
+      ],
+      "suitable_for": [
+        "Người đi làm nội thành (≤50km/ngày)",
+        "Xe thứ 2 trong gia đình",
+        "Người mua xe lần đầu, ngân sách hạn chế",
+        "Sinh viên, người trẻ"
+      ],
+      "not_suitable_for": [
+        "Gia đình ≥5 người",
+        "Đường dài liên tỉnh thường xuyên",
+        "Người cần nhiều không gian hành lý"
+      ],
+      "tradeoffs": "Quãng đường ngắn nhất trong dòng VF; cabin nhỏ; chỉ 4 chỗ",
+      "warranty": "10 năm hoặc 200.000 km",
+      "official_url": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-3",
+      "test_drive_url": "https://shop.vinfastauto.com/vn_vi/dang-ky-lai-thu.html",
+      "installment_url": "https://shop.vinfastauto.com/vn_vi/installment-cost",
+      "compare_url": "https://vinfastauto.com/vn_vi/so-sanh-xe"
+    },
+    {
+      "id": "vf5",
+      "name": "VinFast VF 5 Plus",
+      "segment": "entry-mid",
+      "body_type": "Subcompact SUV",
+      "seats": 5,
+      "price_from": 458000000,
+      "price_to": 479000000,
+      "price_display": "458 – 479 triệu VND",
+      "price_confidence": "MEDIUM",
+      "battery_kwh": 37.23,
+      "battery_type": "LFP",
+      "range_km": 326,
+      "range_note": "Theo WLTP — ASSUMPTION, cần xác minh",
+      "range_confidence": "MEDIUM",
+      "motor_hp": 135,
+      "torque_nm": 242,
+      "charging_ac_kw": 11,
+      "charging_dc_kw": 70,
+      "charging_time_fast": "10-70% khoảng 30 phút (ước tính)",
+      "dimensions_mm": "4052L x 1780W x 1611H",
+      "highlights": [
+        "5 chỗ ngồi, giá cạnh tranh",
+        "Quãng đường tốt hơn VF3",
+        "Phù hợp gia đình nhỏ"
+      ],
+      "suitable_for": [
+        "Gia đình 4-5 người, ngân sách vừa",
+        "Đi phố + đường ngắn liên tỉnh",
+        "Người nâng cấp từ VF3"
+      ],
+      "not_suitable_for": [
+        "Gia đình lớn cần ≥7 chỗ",
+        "Thường xuyên đường dài >300km/lần"
+      ],
+      "tradeoffs": "Dữ liệu cần xác minh thêm — giá và thông số có thể đã thay đổi",
+      "warranty": "7 năm hoặc 140.000 km",
+      "confidence_note": "MEDIUM — thông số cần xác minh lại trên website chính thức",
+      "official_url": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-5-plus",
+      "test_drive_url": "https://shop.vinfastauto.com/vn_vi/dang-ky-lai-thu.html",
+      "installment_url": "https://shop.vinfastauto.com/vn_vi/installment-cost",
+      "compare_url": "https://vinfastauto.com/vn_vi/so-sanh-xe"
+    },
+    {
+      "id": "vf6",
+      "name": "VinFast VF 6",
+      "segment": "mid",
+      "body_type": "Compact SUV",
+      "seats": 5,
+      "price_from": 675000000,
+      "price_to": 765000000,
+      "price_display": "675 – 765 triệu VND",
+      "price_confidence": "ASSUMPTION",
+      "battery_kwh": 59.6,
+      "battery_type": "NMC",
+      "range_km": 399,
+      "range_note": "ASSUMPTION — cần xác minh trên website",
+      "range_confidence": "ASSUMPTION",
+      "motor_hp": 201,
+      "torque_nm": 310,
+      "charging_ac_kw": 11,
+      "charging_dc_kw": 70,
+      "charging_time_fast": "Khoảng 35 phút 10-70%",
+      "dimensions_mm": "4238L x 1820W x 1639H",
+      "highlights": [
+        "Điểm giữa giữa VF5 và VF7",
+        "Thiết kế hiện đại",
+        "5 chỗ rộng rãi"
+      ],
+      "suitable_for": [
+        "Gia đình 4-5 người, ngân sách trung",
+        "Đi phố + đường dài thỉnh thoảng"
+      ],
+      "not_suitable_for": [
+        "Ngân sách dưới 600M",
+        "Cần ≥7 chỗ"
+      ],
+      "tradeoffs": "Thông số chưa xác minh đầy đủ — cần kiểm tra website trước demo",
+      "confidence_note": "ASSUMPTION — giá và thông số ước tính, cần cập nhật",
+      "warranty": "10 năm hoặc 200.000 km",
+      "official_url": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-6",
+      "test_drive_url": "https://shop.vinfastauto.com/vn_vi/dang-ky-lai-thu.html",
+      "installment_url": "https://shop.vinfastauto.com/vn_vi/installment-cost",
+      "compare_url": "https://vinfastauto.com/vn_vi/so-sanh-xe"
+    },
+    {
+      "id": "vf7",
+      "name": "VinFast VF 7",
+      "segment": "mid",
+      "body_type": "Compact-to-Mid SUV",
+      "seats": 5,
+      "price_from": 1185100000,
+      "price_to": 1250900000,
+      "price_display": "1.185 – 1.251 tỷ VND",
+      "price_confidence": "HIGH",
+      "battery_kwh": 75.3,
+      "battery_type": "NMC",
+      "range_km": 431,
+      "range_note": "Theo WLTP — MEDIUM confidence",
+      "range_confidence": "MEDIUM",
+      "motor_hp": 348,
+      "torque_nm": 500,
+      "charging_ac_kw": 11,
+      "charging_dc_kw": 150,
+      "charging_time_fast": "10-80% khoảng 35 phút",
+      "dimensions_mm": "4545L x 1890W x 1635H",
+      "highlights": [
+        "Thiết kế thể thao, năng động",
+        "Hiệu suất mạnh mẽ",
+        "5 chỗ, phù hợp gia đình nhỏ + cặp đôi",
+        "Quãng đường tốt"
+      ],
+      "suitable_for": [
+        "Cặp đôi, gia đình nhỏ",
+        "Người yêu thích xe thể thao",
+        "Ngân sách 1.1-1.3 tỷ"
+      ],
+      "not_suitable_for": [
+        "Gia đình đông người cần ≥7 chỗ",
+        "Ngân sách dưới 1 tỷ"
+      ],
+      "tradeoffs": "Giá cao hơn VF6 đáng kể; 5 chỗ không phù hợp gia đình lớn",
+      "warranty": "10 năm hoặc 200.000 km",
+      "official_url": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-7",
+      "test_drive_url": "https://shop.vinfastauto.com/vn_vi/dang-ky-lai-thu.html",
+      "installment_url": "https://shop.vinfastauto.com/vn_vi/installment-cost",
+      "compare_url": "https://vinfastauto.com/vn_vi/so-sanh-xe"
+    },
+    {
+      "id": "vf8",
+      "name": "VinFast VF 8",
+      "segment": "premium",
+      "body_type": "Mid-size SUV",
+      "seats": 5,
+      "price_from": 1211456000,
+      "price_to": 1243059200,
+      "price_display": "1.211 – 1.243 tỷ VND",
+      "price_confidence": "HIGH",
+      "battery_kwh": 87.7,
+      "battery_type": "NMC",
+      "range_km": 471,
+      "range_note": "471km WLTP, ~405km thực tế",
+      "range_confidence": "HIGH",
+      "motor_hp": 354,
+      "torque_nm": 500,
+      "acceleration_0_100": 5.9,
+      "charging_ac_kw": 11,
+      "charging_dc_kw": 150,
+      "charging_time_fast": "10-80% trong 37 phút (DC 150kW)",
+      "charging_time_ac": "~9.5 giờ (AC 11kW)",
+      "dimensions_mm": "4750L x 1934W x 1667H",
+      "cargo_liters": 376,
+      "cargo_max_liters": 1373,
+      "highlights": [
+        "Quãng đường dài nhất trong phân khúc mid-size",
+        "Nội thất rộng rãi, công nghệ cao",
+        "Hệ thống ADAS (hỗ trợ lái xe)",
+        "Sạc nhanh DC 150kW",
+        "Camera 360 độ",
+        "Màn hình infotainment lớn"
+      ],
+      "suitable_for": [
+        "Gia đình 4-5 người, ngân sách 1.2-1.4 tỷ",
+        "Người thường đi đường dài (>200km/lần)",
+        "Người cần xe sang trọng, tiện nghi"
+      ],
+      "not_suitable_for": [
+        "Gia đình cần ≥7 chỗ",
+        "Ngân sách dưới 1.1 tỷ"
+      ],
+      "tradeoffs": "Giá đắt hơn VF7 nhưng không nhiều; không có ghế hàng 3",
+      "warranty": "10 năm hoặc 200.000 km",
+      "official_url": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-8",
+      "test_drive_url": "https://shop.vinfastauto.com/vn_vi/dang-ky-lai-thu.html",
+      "installment_url": "https://shop.vinfastauto.com/vn_vi/installment-cost",
+      "compare_url": "https://vinfastauto.com/vn_vi/so-sanh-xe"
+    },
+    {
+      "id": "vf9",
+      "name": "VinFast VF 9",
+      "segment": "premium-plus",
+      "body_type": "Full-size SUV 3 hàng ghế",
+      "seats": 7,
+      "price_from": 1632832000,
+      "price_to": 2180620800,
+      "price_display": "1.633 – 2.181 tỷ VND",
+      "price_confidence": "HIGH",
+      "battery_kwh": 123,
+      "battery_type": "NMC",
+      "range_km": 594,
+      "range_note": "594km WLTP — quãng đường cao nhất trong dòng VF",
+      "range_confidence": "HIGH",
+      "motor_hp": 402,
+      "torque_nm": 620,
+      "acceleration_0_100": 6.5,
+      "charging_ac_kw": 11,
+      "charging_dc_kw": 150,
+      "charging_time_fast": "10-80% khoảng 60 phút (DC 150kW)",
+      "dimensions_mm": "5118L x 2000W x 1696H",
+      "highlights": [
+        "7 chỗ ngồi, phù hợp gia đình lớn",
+        "Quãng đường lớn nhất dòng VF (594km WLTP)",
+        "Khoang hành lý khổng lồ",
+        "Hệ thống giải trí hàng ghế sau cao cấp",
+        "Lý tưởng cho gia đình đi đường dài"
+      ],
+      "suitable_for": [
+        "Gia đình ≥5 người (đến 7 người)",
+        "Đường dài liên tỉnh thường xuyên",
+        "Ngân sách từ 1.6 tỷ trở lên",
+        "Xe kinh doanh / đưa đón VIP"
+      ],
+      "not_suitable_for": [
+        "Đi phố hàng ngày (quá lớn, khó đỗ)",
+        "Ngân sách dưới 1.5 tỷ"
+      ],
+      "tradeoffs": "Xe rất lớn — khó đỗ trong TP; giá cao nhất dòng; tiêu thụ điện nhiều hơn",
+      "warranty": "10 năm hoặc 200.000 km",
+      "official_url": "https://vinfastauto.com/vn_vi/xe-vinfast/vf-9",
+      "test_drive_url": "https://shop.vinfastauto.com/vn_vi/dang-ky-lai-thu.html",
+      "installment_url": "https://shop.vinfastauto.com/vn_vi/installment-cost",
+      "compare_url": "https://vinfastauto.com/vn_vi/so-sanh-xe"
+    }
+  ],
+  "recommendation_matrix": {
+    "budget_segments": {
+      "under_600M": ["vf3", "vf5"],
+      "600M_to_1B": ["vf5", "vf6"],
+      "1B_to_1_3B": ["vf7", "vf8"],
+      "above_1_3B": ["vf8", "vf9"]
+    },
+    "by_seats": {
+      "4_or_less": ["vf3"],
+      "5": ["vf5", "vf6", "vf7", "vf8"],
+      "7": ["vf9"]
+    },
+    "by_use_case": {
+      "daily_city": ["vf3", "vf5", "vf6"],
+      "family": ["vf6", "vf7", "vf8", "vf9"],
+      "long_distance": ["vf7", "vf8", "vf9"],
+      "large_family": ["vf9"]
+    }
+  }
+}

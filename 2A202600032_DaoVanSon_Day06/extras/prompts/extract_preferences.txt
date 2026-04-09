@@ -1,0 +1,31 @@
+Dựa vào đoạn hội thoại sau, hãy trích xuất thông tin nhu cầu mua xe của người dùng thành JSON.
+
+ĐOẠN HỘI THOẠI:
+{conversation}
+
+Hãy trả về JSON theo đúng format sau (không thêm gì khác ngoài JSON):
+
+{
+  "budget_vnd": <số tiền ngân sách, null nếu không đề cập>,
+  "budget_note": "<mô tả nếu user dùng từ như 'khoảng 1 tỷ', 'dưới 600 triệu', 'không quan trọng'...>",
+  "seats_needed": <số chỗ tối thiểu cần, null nếu không đề cập>,
+  "use_cases": ["<daily_city | family | long_distance | business | other>", ...],
+  "priorities": ["<range | price | comfort | performance | space | brand>", ...],
+  "daily_km": <km/ngày ước tính, null nếu không đề cập>,
+  "has_home_charging": <true | false | null>,
+  "family_size": <số người trong gia đình, null nếu không đề cập>,
+  "current_car": "<mô tả xe hiện tại nếu có, null nếu không>",
+  "specific_model_interest": ["<id mẫu xe cụ thể nếu user đã đề cập>"],
+  "missing_info": ["<danh sách thông tin còn thiếu để tư vấn chính xác>"],
+  "confidence": "<high | medium | low — mức độ đủ thông tin để recommend>",
+  "next_question": "<câu hỏi tiếp theo cần hỏi user nếu còn thiếu thông tin, null nếu đã đủ>"
+}
+
+HƯỚNG DẪN:
+- Nếu user không đề cập rõ một trường → để null, KHÔNG đoán
+- use_cases: chọn từ danh sách: daily_city (đi làm nội thành), family (gia đình), long_distance (đường dài liên tỉnh), business (kinh doanh), other
+- priorities: chọn từ danh sách: range (tầm xa), price (giá rẻ), comfort (tiện nghi), performance (hiệu suất), space (không gian), brand (thương hiệu)
+- confidence = "high" khi có ít nhất: budget + seats + use_case chính
+- confidence = "medium" khi có budget hoặc seats + use_case
+- confidence = "low" khi thiếu quá nhiều thông tin
+- next_question: ưu tiên hỏi ngân sách trước, sau đó số chỗ, sau đó mục đích sử dụng
