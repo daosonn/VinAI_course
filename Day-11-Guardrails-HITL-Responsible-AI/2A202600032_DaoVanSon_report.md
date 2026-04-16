@@ -1,7 +1,6 @@
 ﻿# Assignment 11 Report - Defense-in-Depth Pipeline
 
 **Student:** Đào Văn Sơn
-**Course:** AICB-P1 - AI Agent Development  
 **Assignment:** Week 11 - Guardrails, HITL, Responsible AI  
 **Date run:** April 16, 2026
 
