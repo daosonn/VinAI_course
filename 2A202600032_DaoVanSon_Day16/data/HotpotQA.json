@@ -1,0 +1,1722 @@
+[
+  {
+    "qid": "mhqa_001",
+    "difficulty": "easy",
+    "question": "Which university did the author of Pride and Prejudice attend?",
+    "gold_answer": "none",
+    "context": [
+      {
+        "title": "Pride and Prejudice",
+        "text": "Pride and Prejudice is a novel written by Jane Austen."
+      },
+      {
+        "title": "Jane Austen",
+        "text": "Jane Austen did not attend a university; she was educated mainly at home and in boarding schools."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_002",
+    "difficulty": "easy",
+    "question": "Con sông nào chảy qua thủ đô của quốc gia nơi kim tự tháp Giza tọa lạc?",
+    "gold_answer": "Sông Nile",
+    "context": [
+      {
+        "title": "Giza",
+        "text": "Quần thể kim tự tháp Giza nằm ở Ai Cập."
+      },
+      {
+        "title": "Ai Cập",
+        "text": "Thủ đô của Ai Cập là Cairo, và sông Nile chảy qua Cairo."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_003",
+    "difficulty": "easy",
+    "question": "What instrument was the composer of The Magic Flute best known for playing?",
+    "gold_answer": "piano",
+    "context": [
+      {
+        "title": "The Magic Flute",
+        "text": "The Magic Flute is an opera composed by Wolfgang Amadeus Mozart."
+      },
+      {
+        "title": "Wolfgang Amadeus Mozart",
+        "text": "Mozart was a prolific composer and was especially known as a pianist."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_004",
+    "difficulty": "easy",
+    "question": "Biển nào giáp với quốc gia có thủ đô là Athens?",
+    "gold_answer": "Biển Aegea",
+    "context": [
+      {
+        "title": "Athens",
+        "text": "Athens là thủ đô của Hy Lạp."
+      },
+      {
+        "title": "Hy Lạp",
+        "text": "Hy Lạp giáp nhiều vùng biển, trong đó có Biển Aegea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_005",
+    "difficulty": "medium",
+    "question": "Which language family does the main language of Argentina belong to?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Argentina",
+        "text": "The main official language of Argentina is Spanish."
+      },
+      {
+        "title": "Spanish language",
+        "text": "Spanish is an Indo-European language in the Romance branch."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_006",
+    "difficulty": "medium",
+    "question": "Tác giả của One Hundred Years of Solitude sinh ra ở quốc gia có đường bờ biển giáp biển nào?",
+    "gold_answer": "Biển Caribe",
+    "context": [
+      {
+        "title": "One Hundred Years of Solitude",
+        "text": "One Hundred Years of Solitude was written by Gabriel García Márquez."
+      },
+      {
+        "title": "Gabriel García Márquez",
+        "text": "Gabriel García Márquez was born in Colombia."
+      },
+      {
+        "title": "Colombia",
+        "text": "Colombia has a coastline on the Caribbean Sea and the Pacific Ocean."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_007",
+    "difficulty": "easy",
+    "question": "What is the capital of the country where the city of Petra is located?",
+    "gold_answer": "Amman",
+    "context": [
+      {
+        "title": "Petra",
+        "text": "Petra is a historical city in Jordan."
+      },
+      {
+        "title": "Jordan",
+        "text": "The capital city of Jordan is Amman."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_008",
+    "difficulty": "medium",
+    "question": "Nhà khoa học phát hiện ra penicillin làm việc chủ yếu trong lĩnh vực nào ngoài vi khuẩn học?",
+    "gold_answer": "miễn dịch học",
+    "context": [
+      {
+        "title": "Penicillin",
+        "text": "Penicillin was discovered by Alexander Fleming."
+      },
+      {
+        "title": "Alexander Fleming",
+        "text": "Alexander Fleming was a Scottish physician and microbiologist who also made important contributions to immunology."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_009",
+    "difficulty": "easy",
+    "question": "Which desert is in the country whose capital is Ulaanbaatar?",
+    "gold_answer": "Gobi Desert",
+    "context": [
+      {
+        "title": "Ulaanbaatar",
+        "text": "Ulaanbaatar is the capital of Mongolia."
+      },
+      {
+        "title": "Mongolia",
+        "text": "Much of southern Mongolia is occupied by the Gobi Desert."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_010",
+    "difficulty": "easy",
+    "question": "Nhà soạn nhạc của bản giao hưởng số 9 'From the New World' sinh ở quốc gia nào?",
+    "gold_answer": "Cộng hòa Séc",
+    "context": [
+      {
+        "title": "Symphony No. 9 'From the New World'",
+        "text": "Symphony No. 9 'From the New World' was composed by Antonín Dvořák."
+      },
+      {
+        "title": "Antonín Dvořák",
+        "text": "Antonín Dvořák was a Czech composer, born in what is now the Czech Republic."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_011",
+    "difficulty": "medium",
+    "question": "What ocean borders the country where Machu Picchu is located?",
+    "gold_answer": "Pacific Ocean",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu Picchu is an Inca citadel in Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Peru lies on the western side of South America and borders the Pacific Ocean."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_012",
+    "difficulty": "medium",
+    "question": "Nhà văn viết The Old Man and the Sea từng là công dân của quốc gia có thủ đô là gì?",
+    "gold_answer": "Washington, D.C.",
+    "context": [
+      {
+        "title": "The Old Man and the Sea",
+        "text": "The Old Man and the Sea was written by Ernest Hemingway."
+      },
+      {
+        "title": "Ernest Hemingway",
+        "text": "Ernest Hemingway was an American novelist."
+      },
+      {
+        "title": "United States",
+        "text": "The capital of the United States is Washington, D.C."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_013",
+    "difficulty": "easy",
+    "question": "Which mountain range contains the highest peak in the country whose capital is Thimphu?",
+    "gold_answer": "Himalayas",
+    "context": [
+      {
+        "title": "Thimphu",
+        "text": "Thimphu is the capital of Bhutan."
+      },
+      {
+        "title": "Bhutan",
+        "text": "Bhutan lies in the eastern Himalayas, where its highest peaks are located."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_014",
+    "difficulty": "easy",
+    "question": "Tác giả của Hamlet được sinh ra tại quốc gia có ngôn ngữ chính là gì?",
+    "gold_answer": "tiếng Anh",
+    "context": [
+      {
+        "title": "Hamlet",
+        "text": "Hamlet is a tragedy written by William Shakespeare."
+      },
+      {
+        "title": "William Shakespeare",
+        "text": "William Shakespeare was born in England."
+      },
+      {
+        "title": "England",
+        "text": "The primary language of England is English."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_015",
+    "difficulty": "medium",
+    "question": "What river flows through the capital of the country where Mount Kilimanjaro is located?",
+    "gold_answer": "none",
+    "context": [
+      {
+        "title": "Mount Kilimanjaro",
+        "text": "Mount Kilimanjaro is located in Tanzania."
+      },
+      {
+        "title": "Tanzania",
+        "text": "The capital of Tanzania is Dodoma."
+      },
+      {
+        "title": "Dodoma",
+        "text": "Dodoma is an inland capital city not famously defined by a major river flowing through it."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_016",
+    "difficulty": "medium",
+    "question": "Nhà phát minh ra máy điện thoại sinh ở thành phố thuộc quốc gia có thủ đô là gì?",
+    "gold_answer": "London",
+    "context": [
+      {
+        "title": "Telephone",
+        "text": "The invention of the telephone is commonly credited to Alexander Graham Bell."
+      },
+      {
+        "title": "Alexander Graham Bell",
+        "text": "Alexander Graham Bell was born in Edinburgh, Scotland."
+      },
+      {
+        "title": "Scotland",
+        "text": "Scotland is part of the United Kingdom, whose capital is London."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_017",
+    "difficulty": "easy",
+    "question": "Which continent contains the country whose capital is Bogotá?",
+    "gold_answer": "South America",
+    "context": [
+      {
+        "title": "Bogotá",
+        "text": "Bogotá is the capital city of Colombia."
+      },
+      {
+        "title": "Colombia",
+        "text": "Colombia is a country in South America."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_018",
+    "difficulty": "easy",
+    "question": "Tôn giáo chính của quốc gia nơi Angkor Wat tọa lạc là gì?",
+    "gold_answer": "Phật giáo",
+    "context": [
+      {
+        "title": "Angkor Wat",
+        "text": "Angkor Wat is located in Cambodia."
+      },
+      {
+        "title": "Cambodia",
+        "text": "The dominant religion in Cambodia is Buddhism."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_019",
+    "difficulty": "medium",
+    "question": "What sea borders the country whose capital is Helsinki?",
+    "gold_answer": "Baltic Sea",
+    "context": [
+      {
+        "title": "Helsinki",
+        "text": "Helsinki is the capital of Finland."
+      },
+      {
+        "title": "Finland",
+        "text": "Finland borders the Baltic Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_020",
+    "difficulty": "medium",
+    "question": "Ngôn ngữ chính của quốc gia nơi nhà vật lý Albert Einstein sinh ra thuộc ngữ hệ nào?",
+    "gold_answer": "Germanic",
+    "context": [
+      {
+        "title": "Albert Einstein",
+        "text": "Albert Einstein was born in Germany."
+      },
+      {
+        "title": "Germany",
+        "text": "The main language of Germany is German."
+      },
+      {
+        "title": "German language",
+        "text": "German belongs to the West Germanic branch of the Germanic language family."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_021",
+    "difficulty": "easy",
+    "question": "Which city is the capital of the country where the Amazon rainforest is mostly located?",
+    "gold_answer": "Brasília",
+    "context": [
+      {
+        "title": "Amazon rainforest",
+        "text": "Most of the Amazon rainforest lies within Brazil."
+      },
+      {
+        "title": "Brazil",
+        "text": "The capital city of Brazil is Brasília."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_022",
+    "difficulty": "easy",
+    "question": "Tác giả của Don Quixote viết bằng ngôn ngữ chính của quốc gia nào?",
+    "gold_answer": "Tây Ban Nha",
+    "context": [
+      {
+        "title": "Don Quixote",
+        "text": "Don Quixote was written by Miguel de Cervantes."
+      },
+      {
+        "title": "Miguel de Cervantes",
+        "text": "Miguel de Cervantes was a Spanish writer."
+      },
+      {
+        "title": "Spanish writer",
+        "text": "A Spanish writer is associated with Spain, whose main language is Spanish."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_023",
+    "difficulty": "medium",
+    "question": "What river runs through the city where the Eiffel Tower stands?",
+    "gold_answer": "Seine",
+    "context": [
+      {
+        "title": "Eiffel Tower",
+        "text": "The Eiffel Tower stands in Paris, France."
+      },
+      {
+        "title": "Paris",
+        "text": "Paris is traversed by the River Seine."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_024",
+    "difficulty": "easy",
+    "question": "Loài động vật biểu tượng quốc gia của nước có thủ đô Canberra là gì?",
+    "gold_answer": "kangaroo",
+    "context": [
+      {
+        "title": "Canberra",
+        "text": "Canberra is the capital of Australia."
+      },
+      {
+        "title": "Australia",
+        "text": "The kangaroo is one of the best-known national symbols of Australia."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_025",
+    "difficulty": "medium",
+    "question": "Which empire built the Colosseum, and what sea bordered its capital?",
+    "gold_answer": "Mediterranean Sea",
+    "context": [
+      {
+        "title": "Colosseum",
+        "text": "The Colosseum was built in ancient Rome under the Roman Empire."
+      },
+      {
+        "title": "Roman Empire",
+        "text": "The capital of the Roman Empire was Rome."
+      },
+      {
+        "title": "Rome",
+        "text": "Rome lies in the Italian peninsula extending into the Mediterranean region, and the empire centered on the Mediterranean Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_026",
+    "difficulty": "medium",
+    "question": "Nhà khoa học nêu thuyết tương đối từng nhập quốc tịch nước nào có thủ đô là Washington, D.C.?",
+    "gold_answer": "Hoa Kỳ",
+    "context": [
+      {
+        "title": "Theory of relativity",
+        "text": "The theory of relativity was developed by Albert Einstein."
+      },
+      {
+        "title": "Albert Einstein",
+        "text": "Einstein later became a citizen of the United States."
+      },
+      {
+        "title": "United States",
+        "text": "The capital of the United States is Washington, D.C."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_027",
+    "difficulty": "easy",
+    "question": "What is the official language of the country where the city of Dubrovnik is located?",
+    "gold_answer": "Croatian",
+    "context": [
+      {
+        "title": "Dubrovnik",
+        "text": "Dubrovnik is a coastal city in Croatia."
+      },
+      {
+        "title": "Croatia",
+        "text": "The official language of Croatia is Croatian."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_028",
+    "difficulty": "medium",
+    "question": "Tác giả của War and Peace sinh ra ở quốc gia giáp đại dương nào ở phía đông?",
+    "gold_answer": "Thái Bình Dương",
+    "context": [
+      {
+        "title": "War and Peace",
+        "text": "War and Peace was written by Leo Tolstoy."
+      },
+      {
+        "title": "Leo Tolstoy",
+        "text": "Leo Tolstoy was born in Russia."
+      },
+      {
+        "title": "Russia",
+        "text": "Russia extends to the Pacific Ocean on its eastern side."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_029",
+    "difficulty": "easy",
+    "question": "Which mountain is in the country whose capital is Tokyo?",
+    "gold_answer": "Mount Fuji",
+    "context": [
+      {
+        "title": "Tokyo",
+        "text": "Tokyo is the capital of Japan."
+      },
+      {
+        "title": "Japan",
+        "text": "Mount Fuji is the most famous mountain in Japan."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_030",
+    "difficulty": "easy",
+    "question": "Nhà soạn nhạc của Fur Elise có quốc tịch nước nào?",
+    "gold_answer": "Đức",
+    "context": [
+      {
+        "title": "Für Elise",
+        "text": "Für Elise is a famous piano piece by Ludwig van Beethoven."
+      },
+      {
+        "title": "Ludwig van Beethoven",
+        "text": "Ludwig van Beethoven was a German composer."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_031",
+    "difficulty": "medium",
+    "question": "What desert lies in the country whose capital is Windhoek?",
+    "gold_answer": "Namib Desert",
+    "context": [
+      {
+        "title": "Windhoek",
+        "text": "Windhoek is the capital of Namibia."
+      },
+      {
+        "title": "Namibia",
+        "text": "The Namib Desert stretches along much of Namibia's coast."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_032",
+    "difficulty": "medium",
+    "question": "Quốc gia nơi nhà văn Franz Kafka sinh ra hiện nay có thủ đô là gì?",
+    "gold_answer": "Prague",
+    "context": [
+      {
+        "title": "Franz Kafka",
+        "text": "Franz Kafka was born in Prague."
+      },
+      {
+        "title": "Prague",
+        "text": "Prague is the capital of the Czech Republic."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_033",
+    "difficulty": "easy",
+    "question": "Which ocean touches the country whose capital is Lisbon?",
+    "gold_answer": "Atlantic Ocean",
+    "context": [
+      {
+        "title": "Lisbon",
+        "text": "Lisbon is the capital of Portugal."
+      },
+      {
+        "title": "Portugal",
+        "text": "Portugal lies on the Iberian Peninsula and borders the Atlantic Ocean."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_034",
+    "difficulty": "easy",
+    "question": "Ngọn tháp nghiêng nổi tiếng nằm ở thành phố thuộc quốc gia có hình dạng bán đảo nào?",
+    "gold_answer": "bán đảo Ý",
+    "context": [
+      {
+        "title": "Leaning Tower of Pisa",
+        "text": "The Leaning Tower of Pisa is located in Pisa, Italy."
+      },
+      {
+        "title": "Italy",
+        "text": "Italy occupies most of the Italian Peninsula."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_035",
+    "difficulty": "medium",
+    "question": "What language family does the primary language of Iran belong to?",
+    "gold_answer": "Indo-Iranian",
+    "context": [
+      {
+        "title": "Iran",
+        "text": "The official language of Iran is Persian."
+      },
+      {
+        "title": "Persian language",
+        "text": "Persian is an Indo-Iranian language within the Indo-European family."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_036",
+    "difficulty": "medium",
+    "question": "Nhà phát minh ra bóng đèn điện thực dụng nổi tiếng sinh ở quốc gia có thủ đô là gì?",
+    "gold_answer": "Washington, D.C.",
+    "context": [
+      {
+        "title": "Light bulb",
+        "text": "Thomas Edison is widely associated with the practical incandescent light bulb."
+      },
+      {
+        "title": "Thomas Edison",
+        "text": "Thomas Edison was an American inventor."
+      },
+      {
+        "title": "United States",
+        "text": "The capital of the United States is Washington, D.C."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_037",
+    "difficulty": "easy",
+    "question": "Which sea borders the country whose capital is Stockholm?",
+    "gold_answer": "Baltic Sea",
+    "context": [
+      {
+        "title": "Stockholm",
+        "text": "Stockholm is the capital of Sweden."
+      },
+      {
+        "title": "Sweden",
+        "text": "Sweden has a long coastline on the Baltic Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_038",
+    "difficulty": "easy",
+    "question": "Tác giả của The Divine Comedy đến từ thành phố thuộc quốc gia có thủ đô là gì?",
+    "gold_answer": "Rome",
+    "context": [
+      {
+        "title": "The Divine Comedy",
+        "text": "The Divine Comedy was written by Dante Alighieri."
+      },
+      {
+        "title": "Dante Alighieri",
+        "text": "Dante Alighieri was from Florence, in Italy."
+      },
+      {
+        "title": "Italy",
+        "text": "The capital of Italy is Rome."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_039",
+    "difficulty": "medium",
+    "question": "What river flows through the city where the Kremlin is located?",
+    "gold_answer": "Moskva River",
+    "context": [
+      {
+        "title": "Kremlin",
+        "text": "The Kremlin is located in Moscow, Russia."
+      },
+      {
+        "title": "Moscow",
+        "text": "Moscow stands on the Moskva River."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_040",
+    "difficulty": "medium",
+    "question": "Nhà khoa học đề xuất chọn lọc tự nhiên từng đi nghiên cứu trên con tàu nào?",
+    "gold_answer": "HMS Beagle",
+    "context": [
+      {
+        "title": "Natural selection",
+        "text": "The theory of natural selection is closely associated with Charles Darwin."
+      },
+      {
+        "title": "Charles Darwin",
+        "text": "Charles Darwin developed many of his ideas during and after his voyage on HMS Beagle."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_041",
+    "difficulty": "easy",
+    "question": "Which country has the capital Vienna, and what language is mainly spoken there?",
+    "gold_answer": "German",
+    "context": [
+      {
+        "title": "Vienna",
+        "text": "Vienna is the capital city of Austria."
+      },
+      {
+        "title": "Austria",
+        "text": "The primary language spoken in Austria is German."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_042",
+    "difficulty": "easy",
+    "question": "Tượng Chúa Kitô Cứu Thế nằm ở thành phố thuộc quốc gia có thủ đô là gì?",
+    "gold_answer": "Brasília",
+    "context": [
+      {
+        "title": "Christ the Redeemer",
+        "text": "Christ the Redeemer is located in Rio de Janeiro, Brazil."
+      },
+      {
+        "title": "Brazil",
+        "text": "The capital city of Brazil is Brasília."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_043",
+    "difficulty": "medium",
+    "question": "Which sea borders the country where the city of Tallinn is located?",
+    "gold_answer": "Baltic Sea",
+    "context": [
+      {
+        "title": "Tallinn",
+        "text": "Tallinn is the capital of Estonia."
+      },
+      {
+        "title": "Estonia",
+        "text": "Estonia lies on the eastern coast of the Baltic Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_044",
+    "difficulty": "medium",
+    "question": "Ngôn ngữ chính của quốc gia nơi Vincent van Gogh sinh ra thuộc ngữ hệ nào?",
+    "gold_answer": "Germanic",
+    "context": [
+      {
+        "title": "Vincent van Gogh",
+        "text": "Vincent van Gogh was born in the Netherlands."
+      },
+      {
+        "title": "Netherlands",
+        "text": "The main language of the Netherlands is Dutch."
+      },
+      {
+        "title": "Dutch language",
+        "text": "Dutch is a West Germanic language."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_045",
+    "difficulty": "easy",
+    "question": "What is the capital of the country where the Serengeti is located?",
+    "gold_answer": "Dodoma",
+    "context": [
+      {
+        "title": "Serengeti",
+        "text": "The Serengeti ecosystem is largely in Tanzania."
+      },
+      {
+        "title": "Tanzania",
+        "text": "The capital city of Tanzania is Dodoma."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_046",
+    "difficulty": "easy",
+    "question": "Tác giả của The Little Prince viết bằng ngôn ngữ nào?",
+    "gold_answer": "tiếng Pháp",
+    "context": [
+      {
+        "title": "The Little Prince",
+        "text": "The Little Prince was written by Antoine de Saint-Exupéry."
+      },
+      {
+        "title": "Antoine de Saint-Exupéry",
+        "text": "Antoine de Saint-Exupéry was a French writer."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_047",
+    "difficulty": "medium",
+    "question": "Which mountain range contains K2, the high peak in the country whose capital is Islamabad?",
+    "gold_answer": "Karakoram",
+    "context": [
+      {
+        "title": "Islamabad",
+        "text": "Islamabad is the capital of Pakistan."
+      },
+      {
+        "title": "Pakistan",
+        "text": "K2, one of the world's highest peaks in Pakistan, is part of the Karakoram range."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_048",
+    "difficulty": "medium",
+    "question": "Nhà soạn nhạc của The Nutcracker sinh ở thành phố thuộc đế quốc nào?",
+    "gold_answer": "Đế quốc Nga",
+    "context": [
+      {
+        "title": "The Nutcracker",
+        "text": "The Nutcracker was composed by Pyotr Ilyich Tchaikovsky."
+      },
+      {
+        "title": "Pyotr Ilyich Tchaikovsky",
+        "text": "Tchaikovsky was born in Votkinsk in the Russian Empire."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_049",
+    "difficulty": "easy",
+    "question": "What river runs through the capital of Hungary?",
+    "gold_answer": "Danube",
+    "context": [
+      {
+        "title": "Hungary",
+        "text": "The capital city of Hungary is Budapest."
+      },
+      {
+        "title": "Budapest",
+        "text": "Budapest is divided by the Danube River."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_050",
+    "difficulty": "easy",
+    "question": "Quốc gia có thủ đô Nairobi nằm ở châu lục nào?",
+    "gold_answer": "Châu Phi",
+    "context": [
+      {
+        "title": "Nairobi",
+        "text": "Nairobi is the capital of Kenya."
+      },
+      {
+        "title": "Kenya",
+        "text": "Kenya is a country in Africa."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_051",
+    "difficulty": "medium",
+    "question": "Which religion is most associated with the country where Lumbini is located?",
+    "gold_answer": "Buddhism",
+    "context": [
+      {
+        "title": "Lumbini",
+        "text": "Lumbini, the birthplace of the Buddha, is located in Nepal."
+      },
+      {
+        "title": "Buddha",
+        "text": "The Buddha is the central figure of Buddhism."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_052",
+    "difficulty": "medium",
+    "question": "Tác giả của Crime and Punishment sinh ở thành phố thuộc quốc gia giáp biển nào ở tây bắc?",
+    "gold_answer": "Biển Baltic",
+    "context": [
+      {
+        "title": "Crime and Punishment",
+        "text": "Crime and Punishment was written by Fyodor Dostoevsky."
+      },
+      {
+        "title": "Fyodor Dostoevsky",
+        "text": "Fyodor Dostoevsky was born in Moscow, Russia."
+      },
+      {
+        "title": "Russia",
+        "text": "Russia has access to the Baltic Sea in the northwest."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_053",
+    "difficulty": "easy",
+    "question": "What is the capital of the country where the Danube Delta is located partly on the coast?",
+    "gold_answer": "Bucharest",
+    "context": [
+      {
+        "title": "Danube Delta",
+        "text": "The Danube Delta is mostly in Romania."
+      },
+      {
+        "title": "Romania",
+        "text": "The capital of Romania is Bucharest."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_054",
+    "difficulty": "easy",
+    "question": "Nhà khoa học phát hiện ra phóng xạ cùng chồng mình mang quốc tịch nước nào?",
+    "gold_answer": "Pháp",
+    "context": [
+      {
+        "title": "Radioactivity",
+        "text": "Marie Curie pioneered research on radioactivity."
+      },
+      {
+        "title": "Marie Curie",
+        "text": "Marie Curie later became a naturalized French citizen."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_055",
+    "difficulty": "medium",
+    "question": "Which sea borders the country whose capital is Riga?",
+    "gold_answer": "Baltic Sea",
+    "context": [
+      {
+        "title": "Riga",
+        "text": "Riga is the capital city of Latvia."
+      },
+      {
+        "title": "Latvia",
+        "text": "Latvia has a coastline on the Baltic Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_056",
+    "difficulty": "medium",
+    "question": "Nhà văn viết Ulysses đến từ quốc gia có đảo lớn nào ở phía tây châu Âu?",
+    "gold_answer": "đảo Ireland",
+    "context": [
+      {
+        "title": "Ulysses",
+        "text": "Ulysses was written by James Joyce."
+      },
+      {
+        "title": "James Joyce",
+        "text": "James Joyce was an Irish novelist."
+      },
+      {
+        "title": "Ireland",
+        "text": "Ireland occupies most of the island of Ireland in western Europe."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_057",
+    "difficulty": "easy",
+    "question": "Which country has the capital Oslo, and what sea is it associated with on its southern coast?",
+    "gold_answer": "North Sea",
+    "context": [
+      {
+        "title": "Oslo",
+        "text": "Oslo is the capital of Norway."
+      },
+      {
+        "title": "Norway",
+        "text": "Norway has access to the North Sea along its southern and western maritime areas."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_058",
+    "difficulty": "easy",
+    "question": "Tác giả của The Trial sử dụng ngôn ngữ chính nào để sáng tác?",
+    "gold_answer": "tiếng Đức",
+    "context": [
+      {
+        "title": "The Trial",
+        "text": "The Trial was written by Franz Kafka."
+      },
+      {
+        "title": "Franz Kafka",
+        "text": "Franz Kafka was a German-language writer."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_059",
+    "difficulty": "medium",
+    "question": "What mountain stands in the country whose capital is Yerevan?",
+    "gold_answer": "Mount Ararat",
+    "context": [
+      {
+        "title": "Yerevan",
+        "text": "Yerevan is the capital of Armenia."
+      },
+      {
+        "title": "Armenia",
+        "text": "Mount Ararat is a national symbol closely associated with Armenia."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_060",
+    "difficulty": "medium",
+    "question": "Nhà phát minh của World Wide Web làm việc tại tổ chức đặt gần thành phố thuộc quốc gia có thủ đô là gì?",
+    "gold_answer": "Bern",
+    "context": [
+      {
+        "title": "World Wide Web",
+        "text": "The World Wide Web was invented by Tim Berners-Lee."
+      },
+      {
+        "title": "Tim Berners-Lee",
+        "text": "Tim Berners-Lee invented the Web while working at CERN."
+      },
+      {
+        "title": "CERN",
+        "text": "CERN is located near Geneva, in Switzerland, whose capital is Bern."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_061",
+    "difficulty": "easy",
+    "question": "Which ocean borders the country whose capital is Rabat?",
+    "gold_answer": "Atlantic Ocean",
+    "context": [
+      {
+        "title": "Rabat",
+        "text": "Rabat is the capital of Morocco."
+      },
+      {
+        "title": "Morocco",
+        "text": "Morocco borders the Atlantic Ocean."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_062",
+    "difficulty": "easy",
+    "question": "Nhà soạn nhạc của Carmen sinh ra ở quốc gia có thủ đô là gì?",
+    "gold_answer": "Paris",
+    "context": [
+      {
+        "title": "Carmen",
+        "text": "Carmen is an opera composed by Georges Bizet."
+      },
+      {
+        "title": "Georges Bizet",
+        "text": "Georges Bizet was a French composer."
+      },
+      {
+        "title": "France",
+        "text": "The capital of France is Paris."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_063",
+    "difficulty": "medium",
+    "question": "What sea borders the country where the city of Split is located?",
+    "gold_answer": "Adriatic Sea",
+    "context": [
+      {
+        "title": "Split",
+        "text": "Split is a coastal city in Croatia."
+      },
+      {
+        "title": "Croatia",
+        "text": "Croatia has a long coastline on the Adriatic Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_064",
+    "difficulty": "medium",
+    "question": "Ngôn ngữ chính của quốc gia có thủ đô Reykjavik thuộc ngữ hệ nào?",
+    "gold_answer": "Germanic",
+    "context": [
+      {
+        "title": "Reykjavik",
+        "text": "Reykjavik is the capital of Iceland."
+      },
+      {
+        "title": "Iceland",
+        "text": "The main language of Iceland is Icelandic."
+      },
+      {
+        "title": "Icelandic language",
+        "text": "Icelandic is a North Germanic language."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_065",
+    "difficulty": "easy",
+    "question": "Which country has the capital Lima, and what mountain range runs through it?",
+    "gold_answer": "Andes",
+    "context": [
+      {
+        "title": "Lima",
+        "text": "Lima is the capital city of Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "The Andes mountain range runs through Peru."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_066",
+    "difficulty": "easy",
+    "question": "Tác giả của Madame Bovary là người nước nào?",
+    "gold_answer": "Pháp",
+    "context": [
+      {
+        "title": "Madame Bovary",
+        "text": "Madame Bovary was written by Gustave Flaubert."
+      },
+      {
+        "title": "Gustave Flaubert",
+        "text": "Gustave Flaubert was a French novelist."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_067",
+    "difficulty": "medium",
+    "question": "What river runs through the capital of Slovakia?",
+    "gold_answer": "Danube",
+    "context": [
+      {
+        "title": "Slovakia",
+        "text": "The capital city of Slovakia is Bratislava."
+      },
+      {
+        "title": "Bratislava",
+        "text": "Bratislava lies on the Danube River."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_068",
+    "difficulty": "medium",
+    "question": "Nhà bác học phát minh ra định luật hấp dẫn phổ quát sinh ở quốc gia có nhà thờ quốc gia thuộc giáo hội nào?",
+    "gold_answer": "Giáo hội Anh",
+    "context": [
+      {
+        "title": "Universal gravitation",
+        "text": "The law of universal gravitation is attributed to Isaac Newton."
+      },
+      {
+        "title": "Isaac Newton",
+        "text": "Isaac Newton was born in England."
+      },
+      {
+        "title": "England",
+        "text": "The established church of England is the Church of England."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_069",
+    "difficulty": "easy",
+    "question": "Which sea borders the country whose capital is Copenhagen?",
+    "gold_answer": "Baltic Sea",
+    "context": [
+      {
+        "title": "Copenhagen",
+        "text": "Copenhagen is the capital of Denmark."
+      },
+      {
+        "title": "Denmark",
+        "text": "Denmark has coastlines connected to the Baltic Sea and the North Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_070",
+    "difficulty": "easy",
+    "question": "Nhà soạn nhạc của Swan Lake chơi nhạc cụ nào là chính?",
+    "gold_answer": "piano",
+    "context": [
+      {
+        "title": "Swan Lake",
+        "text": "Swan Lake was composed by Pyotr Ilyich Tchaikovsky."
+      },
+      {
+        "title": "Pyotr Ilyich Tchaikovsky",
+        "text": "Tchaikovsky was trained as a composer and pianist."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_071",
+    "difficulty": "medium",
+    "question": "What ocean borders the country where Table Mountain is located?",
+    "gold_answer": "Atlantic Ocean",
+    "context": [
+      {
+        "title": "Table Mountain",
+        "text": "Table Mountain is located in Cape Town, South Africa."
+      },
+      {
+        "title": "South Africa",
+        "text": "South Africa borders both the Atlantic Ocean and the Indian Ocean; Cape Town lies on the Atlantic side."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_072",
+    "difficulty": "medium",
+    "question": "Nhà văn viết The Brothers Karamazov sinh ở thành phố thuộc quốc gia có đồng tiền hiện đại là gì?",
+    "gold_answer": "ruble",
+    "context": [
+      {
+        "title": "The Brothers Karamazov",
+        "text": "The Brothers Karamazov was written by Fyodor Dostoevsky."
+      },
+      {
+        "title": "Fyodor Dostoevsky",
+        "text": "Fyodor Dostoevsky was born in Moscow, Russia."
+      },
+      {
+        "title": "Russia",
+        "text": "The modern currency of Russia is the ruble."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_073",
+    "difficulty": "easy",
+    "question": "Which country has the capital Bern, and what mountain range is strongly associated with it?",
+    "gold_answer": "Alps",
+    "context": [
+      {
+        "title": "Bern",
+        "text": "Bern is the capital of Switzerland."
+      },
+      {
+        "title": "Switzerland",
+        "text": "Switzerland is strongly associated with the Alps."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_074",
+    "difficulty": "easy",
+    "question": "Nhà khoa học phát minh ra máy in kiểu chữ rời nổi tiếng sinh ở thành phố thuộc quốc gia có ngôn ngữ chính là gì?",
+    "gold_answer": "tiếng Đức",
+    "context": [
+      {
+        "title": "Printing press",
+        "text": "Johannes Gutenberg is credited with the movable-type printing press in Europe."
+      },
+      {
+        "title": "Johannes Gutenberg",
+        "text": "Johannes Gutenberg was born in Mainz, in present-day Germany."
+      },
+      {
+        "title": "Germany",
+        "text": "The primary language of Germany is German."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_075",
+    "difficulty": "medium",
+    "question": "What river flows through the city where the Colosseum is located?",
+    "gold_answer": "Tiber",
+    "context": [
+      {
+        "title": "Colosseum",
+        "text": "The Colosseum is located in Rome, Italy."
+      },
+      {
+        "title": "Rome",
+        "text": "Rome is situated on the Tiber River."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_076",
+    "difficulty": "medium",
+    "question": "Ngôn ngữ chính của quốc gia nơi nhà thơ Pablo Neruda sinh ra thuộc ngữ hệ nào?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Pablo Neruda",
+        "text": "Pablo Neruda was born in Chile."
+      },
+      {
+        "title": "Chile",
+        "text": "The main language of Chile is Spanish."
+      },
+      {
+        "title": "Spanish language",
+        "text": "Spanish belongs to the Romance language family."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_077",
+    "difficulty": "easy",
+    "question": "Which sea borders the country whose capital is Valletta?",
+    "gold_answer": "Mediterranean Sea",
+    "context": [
+      {
+        "title": "Valletta",
+        "text": "Valletta is the capital of Malta."
+      },
+      {
+        "title": "Malta",
+        "text": "Malta is an island country in the Mediterranean Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_078",
+    "difficulty": "easy",
+    "question": "Tác giả của The Odyssey thuộc nền văn minh cổ đại nào có thành phố Athens?",
+    "gold_answer": "Hy Lạp cổ đại",
+    "context": [
+      {
+        "title": "The Odyssey",
+        "text": "The Odyssey is traditionally attributed to Homer."
+      },
+      {
+        "title": "Homer",
+        "text": "Homer is traditionally regarded as an ancient Greek poet."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_079",
+    "difficulty": "medium",
+    "question": "What sea borders the country where the city of Odessa is located?",
+    "gold_answer": "Black Sea",
+    "context": [
+      {
+        "title": "Odessa",
+        "text": "Odessa is a major port city in Ukraine."
+      },
+      {
+        "title": "Ukraine",
+        "text": "Ukraine has a coastline on the Black Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_080",
+    "difficulty": "medium",
+    "question": "Nhà vật lý phát triển cơ học lượng tử với nguyên lý bất định sinh ở thành phố thuộc quốc gia có thủ đô là gì?",
+    "gold_answer": "Berlin",
+    "context": [
+      {
+        "title": "Uncertainty principle",
+        "text": "The uncertainty principle was formulated by Werner Heisenberg."
+      },
+      {
+        "title": "Werner Heisenberg",
+        "text": "Werner Heisenberg was born in Würzburg, Germany."
+      },
+      {
+        "title": "Germany",
+        "text": "The capital of Germany is Berlin."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_081",
+    "difficulty": "easy",
+    "question": "Which country has the capital Doha, and what gulf does it border?",
+    "gold_answer": "Persian Gulf",
+    "context": [
+      {
+        "title": "Doha",
+        "text": "Doha is the capital city of Qatar."
+      },
+      {
+        "title": "Qatar",
+        "text": "Qatar is a peninsula on the Persian Gulf."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_082",
+    "difficulty": "easy",
+    "question": "Nhà soạn nhạc của The Barber of Seville đến từ quốc gia có hình dạng bán đảo nào?",
+    "gold_answer": "bán đảo Ý",
+    "context": [
+      {
+        "title": "The Barber of Seville",
+        "text": "The Barber of Seville was composed by Gioachino Rossini."
+      },
+      {
+        "title": "Gioachino Rossini",
+        "text": "Rossini was an Italian composer."
+      },
+      {
+        "title": "Italy",
+        "text": "Italy is centered on the Italian Peninsula."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_083",
+    "difficulty": "medium",
+    "question": "What mountain range is in the country whose capital is Tbilisi?",
+    "gold_answer": "Caucasus",
+    "context": [
+      {
+        "title": "Tbilisi",
+        "text": "Tbilisi is the capital of Georgia."
+      },
+      {
+        "title": "Georgia",
+        "text": "Georgia lies in the Caucasus region between Europe and Asia."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_084",
+    "difficulty": "medium",
+    "question": "Tác giả của A Farewell to Arms từng phục vụ trong quân đội của nước nào trong Thế chiến I?",
+    "gold_answer": "Ý",
+    "context": [
+      {
+        "title": "A Farewell to Arms",
+        "text": "A Farewell to Arms was written by Ernest Hemingway."
+      },
+      {
+        "title": "Ernest Hemingway",
+        "text": "During World War I, Hemingway served as an ambulance driver with the Italian forces."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_085",
+    "difficulty": "easy",
+    "question": "Which sea borders the country whose capital is Beirut?",
+    "gold_answer": "Mediterranean Sea",
+    "context": [
+      {
+        "title": "Beirut",
+        "text": "Beirut is the capital of Lebanon."
+      },
+      {
+        "title": "Lebanon",
+        "text": "Lebanon has a coastline on the Mediterranean Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_086",
+    "difficulty": "easy",
+    "question": "Nhà toán học nêu định lý cuối cùng nổi tiếng mang quốc tịch nước nào?",
+    "gold_answer": "Pháp",
+    "context": [
+      {
+        "title": "Fermat's Last Theorem",
+        "text": "Fermat's Last Theorem is named after Pierre de Fermat."
+      },
+      {
+        "title": "Pierre de Fermat",
+        "text": "Pierre de Fermat was a French mathematician."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_087",
+    "difficulty": "medium",
+    "question": "What ocean borders the country where the city of Perth is located?",
+    "gold_answer": "Indian Ocean",
+    "context": [
+      {
+        "title": "Perth",
+        "text": "Perth is a major city in Western Australia, Australia."
+      },
+      {
+        "title": "Western Australia",
+        "text": "Western Australia faces the Indian Ocean."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_088",
+    "difficulty": "medium",
+    "question": "Ngôn ngữ chính của quốc gia nơi nhà khoa học Niels Bohr sinh ra thuộc ngữ hệ nào?",
+    "gold_answer": "Germanic",
+    "context": [
+      {
+        "title": "Niels Bohr",
+        "text": "Niels Bohr was born in Denmark."
+      },
+      {
+        "title": "Denmark",
+        "text": "The main language of Denmark is Danish."
+      },
+      {
+        "title": "Danish language",
+        "text": "Danish is a North Germanic language."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_089",
+    "difficulty": "easy",
+    "question": "Which country has the capital Sofia, and what mountain range crosses western parts of it?",
+    "gold_answer": "Balkan Mountains",
+    "context": [
+      {
+        "title": "Sofia",
+        "text": "Sofia is the capital of Bulgaria."
+      },
+      {
+        "title": "Bulgaria",
+        "text": "The Balkan Mountains are a major mountain range in Bulgaria."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_090",
+    "difficulty": "easy",
+    "question": "Nhà văn viết The Stranger sinh ra ở lãnh thổ thuộc châu lục nào?",
+    "gold_answer": "Châu Phi",
+    "context": [
+      {
+        "title": "The Stranger",
+        "text": "The Stranger was written by Albert Camus."
+      },
+      {
+        "title": "Albert Camus",
+        "text": "Albert Camus was born in French Algeria."
+      },
+      {
+        "title": "Algeria",
+        "text": "Algeria is in North Africa."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_091",
+    "difficulty": "medium",
+    "question": "What river flows through the capital of Serbia?",
+    "gold_answer": "Danube",
+    "context": [
+      {
+        "title": "Serbia",
+        "text": "The capital of Serbia is Belgrade."
+      },
+      {
+        "title": "Belgrade",
+        "text": "Belgrade lies at the confluence of the Sava and Danube rivers."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_092",
+    "difficulty": "medium",
+    "question": "Nhà khoa học đặt nền móng cho thuyết điện từ học cổ điển đã làm việc tại trường đại học nào ở thành phố Cambridge?",
+    "gold_answer": "University of Cambridge",
+    "context": [
+      {
+        "title": "Electromagnetic theory",
+        "text": "Classical electromagnetic theory is strongly associated with James Clerk Maxwell."
+      },
+      {
+        "title": "James Clerk Maxwell",
+        "text": "James Clerk Maxwell was a professor at the University of Cambridge."
+      },
+      {
+        "title": "Cambridge",
+        "text": "The University of Cambridge is a major university in Cambridge, England."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_093",
+    "difficulty": "easy",
+    "question": "Which sea borders the country whose capital is Muscat?",
+    "gold_answer": "Arabian Sea",
+    "context": [
+      {
+        "title": "Muscat",
+        "text": "Muscat is the capital of Oman."
+      },
+      {
+        "title": "Oman",
+        "text": "Oman has a long coastline on the Arabian Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_094",
+    "difficulty": "easy",
+    "question": "Tác giả của The Canterbury Tales sáng tác bằng ngôn ngữ nào?",
+    "gold_answer": "tiếng Anh",
+    "context": [
+      {
+        "title": "The Canterbury Tales",
+        "text": "The Canterbury Tales was written by Geoffrey Chaucer."
+      },
+      {
+        "title": "Geoffrey Chaucer",
+        "text": "Geoffrey Chaucer was an English poet and author."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_095",
+    "difficulty": "medium",
+    "question": "What ocean borders the country where the city of Casablanca is located?",
+    "gold_answer": "Atlantic Ocean",
+    "context": [
+      {
+        "title": "Casablanca",
+        "text": "Casablanca is the largest city in Morocco."
+      },
+      {
+        "title": "Morocco",
+        "text": "Morocco borders the Atlantic Ocean."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_096",
+    "difficulty": "medium",
+    "question": "Ngôn ngữ chính của quốc gia nơi nhà văn Haruki Murakami sinh ra thuộc ngữ hệ nào?",
+    "gold_answer": "Japonic",
+    "context": [
+      {
+        "title": "Haruki Murakami",
+        "text": "Haruki Murakami was born in Japan."
+      },
+      {
+        "title": "Japan",
+        "text": "The main language of Japan is Japanese."
+      },
+      {
+        "title": "Japanese language",
+        "text": "Japanese is generally classified in the Japonic language family."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_097",
+    "difficulty": "easy",
+    "question": "Which sea borders the country whose capital is Tirana?",
+    "gold_answer": "Adriatic Sea",
+    "context": [
+      {
+        "title": "Tirana",
+        "text": "Tirana is the capital of Albania."
+      },
+      {
+        "title": "Albania",
+        "text": "Albania has a coastline on the Adriatic Sea."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_098",
+    "difficulty": "easy",
+    "question": "Nhà khoa học đưa ra mô hình nguyên tử mang tên mình sinh ra ở quốc gia có thủ đô là gì?",
+    "gold_answer": "Copenhagen",
+    "context": [
+      {
+        "title": "Bohr model",
+        "text": "The Bohr model of the atom was proposed by Niels Bohr."
+      },
+      {
+        "title": "Niels Bohr",
+        "text": "Niels Bohr was Danish."
+      },
+      {
+        "title": "Denmark",
+        "text": "The capital of Denmark is Copenhagen."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_099",
+    "difficulty": "medium",
+    "question": "What river runs through the city where the Acropolis is located?",
+    "gold_answer": "none",
+    "context": [
+      {
+        "title": "Acropolis of Athens",
+        "text": "The Acropolis is located in Athens, Greece."
+      },
+      {
+        "title": "Athens",
+        "text": "Athens is not primarily identified by a major river running through its urban core."
+      }
+    ]
+  },
+  {
+    "qid": "mhqa_100",
+    "difficulty": "hard",
+    "question": "Nhà văn viết The Name of the Rose là giáo sư tại trường đại học ở thành phố thuộc quốc gia có thủ đô nào?",
+    "gold_answer": "Bologna",
+    "context": [
+      {
+        "title": "The Name of the Rose",
+        "text": "The Name of the Rose was written by Umberto Eco."
+      },
+      {
+        "title": "Umberto Eco",
+        "text": "Umberto Eco taught at the University of Bologna."
+      },
+      {
+        "title": "University of Bologna",
+        "text": "The University of Bologna is located in Bologna, Italy."
+      }
+    ]
+  }
+]
