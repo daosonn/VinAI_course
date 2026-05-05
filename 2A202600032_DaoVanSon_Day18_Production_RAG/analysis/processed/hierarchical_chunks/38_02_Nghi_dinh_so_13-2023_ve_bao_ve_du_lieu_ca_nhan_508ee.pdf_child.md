@@ -1,0 +1,21 @@
+---
+metadata: {
+  "source": "Nghi_dinh_so_13-2023_ve_bao_ve_du_lieu_ca_nhan_508ee.pdf",
+  "doc_type": "legal",
+  "page_start": 1,
+  "page_end": 39,
+  "article": "Điều 35",
+  "title": "Trách nhiệm của Bộ Khoa học và Công nghệ",
+  "article_index": 35,
+  "extraction_method": "official_congbao_text",
+  "source_url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228/44543.htm",
+  "chunk_type": "child",
+  "chunk_index": 1,
+  "parent_index": 0,
+  "strategy": "hierarchical",
+  "parent_id": "Nghi_dinh_so_13_2023_ve_bao_ve_du_lieu_ca_nhan_508ee_pdf_parent_0",
+  "chunk_text_chars": 252
+}
+---
+
+## Điều 35. Trách nhiệm của Bộ Khoa học và Công nghệ 1. Phối hợp với Bộ Công an trong xây dựng Tiêu chuẩn bảo vệ dữ liệu cá nhân và các khuyến nghị áp dụng Tiêu chuẩn bảo vệ dữ liệu cá nhân. 2. Nghiên cứu, trao đổi Bộ Công an về các biện pháp bảo vệ dữ

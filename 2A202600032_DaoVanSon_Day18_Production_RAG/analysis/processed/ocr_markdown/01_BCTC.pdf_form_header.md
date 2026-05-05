@@ -1,0 +1,21 @@
+---
+metadata: {
+  "source": "BCTC.pdf",
+  "doc_type": "tax_form",
+  "company": "CÔNG TY CỔ PHẦN DHA SURFACES",
+  "tax_code": "0106769437",
+  "period": "Quý 4 năm 2024",
+  "extraction_method": "sample_template",
+  "section": "form_header",
+  "page_start": 1,
+  "page_end": 1
+}
+---
+
+# Tờ khai thuế giá trị gia tăng mẫu 01/GTGT
+
+Người nộp thuế: CÔNG TY CỔ PHẦN DHA SURFACES
+Mã số thuế: 0106769437
+Kỳ tính thuế: Quý 4 năm 2024
+Ngày ký: 24 tháng 01 năm 2025
+Đơn vị tiền: đồng Việt Nam

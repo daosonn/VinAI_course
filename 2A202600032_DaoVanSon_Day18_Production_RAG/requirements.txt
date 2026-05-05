@@ -1,0 +1,11 @@
+pymupdf
+paddleocr
+opencv-python
+pandas
+underthesea
+rapidfuzz
+rank-bm25
+sentence-transformers
+qdrant-client
+python-dotenv
+pytest

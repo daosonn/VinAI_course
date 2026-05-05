@@ -1,0 +1,10 @@
+[
+  {
+    "question": "Thuế GTGT còn được khấu trừ chuyển kỳ sau là bao nhiêu?",
+    "ground_truth": "Thuế GTGT còn được khấu trừ chuyển kỳ sau tại chỉ tiêu [43] là 0 đồng."
+  },
+  {
+    "question": "Dữ liệu cá nhân là gì?",
+    "ground_truth": "Dữ liệu cá nhân là thông tin gắn liền với một con người cụ thể hoặc giúp xác định một con người cụ thể."
+  }
+]

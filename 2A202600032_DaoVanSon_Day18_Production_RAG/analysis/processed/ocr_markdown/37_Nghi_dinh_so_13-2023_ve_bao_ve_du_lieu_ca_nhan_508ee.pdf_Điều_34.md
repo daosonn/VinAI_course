@@ -1,0 +1,18 @@
+---
+metadata: {
+  "source": "Nghi_dinh_so_13-2023_ve_bao_ve_du_lieu_ca_nhan_508ee.pdf",
+  "doc_type": "legal",
+  "page_start": 1,
+  "page_end": 39,
+  "article": "Điều 34",
+  "title": "Trách nhiệm của Bộ Quốc phòng",
+  "article_index": 34,
+  "extraction_method": "official_congbao_text",
+  "source_url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228/44543.htm"
+}
+---
+
+# Nghị định 13/2023/NĐ-CP
+
+## Điều 34. Trách nhiệm của Bộ Quốc phòng
+Quản lý, thanh tra, kiểm tra, giám sát, xử lý vi phạm và áp dụng các quy định bảo vệ dữ liệu cá nhân đối với các cơ quan, tổ chức, cá nhân thuộc phạm vi quản lý của Bộ Quốc phòng theo quy định pháp luật và chức năng, nhiệm vụ được giao.
