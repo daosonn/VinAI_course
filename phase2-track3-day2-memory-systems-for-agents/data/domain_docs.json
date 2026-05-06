@@ -1,0 +1,62 @@
+[
+  {
+    "id": "doc-memory-types",
+    "title": "Four Agent Memory Types",
+    "text": "A production agent usually separates short-term conversation memory, long-term user profile facts, episodic task/outcome memory, and semantic domain knowledge. Keeping them separate makes retrieval and deletion easier.",
+    "tags": ["memory", "agent", "short-term", "profile", "episodic", "semantic"]
+  },
+  {
+    "id": "doc-token-budget",
+    "title": "Context Window Budget",
+    "text": "When the context window is limited, recent conversation should be trimmed with a sliding window and external memory should be injected by priority. A simple classroom budget is 10 percent short-term, 4 percent profile, 3 percent episodic, and 3 percent semantic.",
+    "tags": ["context", "token", "budget", "trim"]
+  },
+  {
+    "id": "doc-conflict",
+    "title": "Memory Conflict Resolution",
+    "text": "If a new user statement corrects an old profile fact, the newer fact should replace the old value. For example, if allergy changes from milk to soy, the profile should store soy only.",
+    "tags": ["profile", "conflict", "allergy", "recency"]
+  },
+  {
+    "id": "doc-episodic",
+    "title": "Episodic Memory",
+    "text": "Episodic memory stores task, trajectory, outcome, and reflection. It helps an agent reuse a previous debugging lesson when a similar task appears later.",
+    "tags": ["episode", "debug", "outcome", "reflection"]
+  },
+  {
+    "id": "doc-semantic",
+    "title": "Semantic Memory Retrieval",
+    "text": "Semantic memory retrieves relevant knowledge chunks from a document store. Vector databases such as Chroma or FAISS are common, but keyword search is an acceptable fallback for a small offline lab.",
+    "tags": ["semantic", "vector", "chroma", "faiss", "keyword"]
+  },
+  {
+    "id": "doc-langgraph",
+    "title": "LangGraph Memory Flow",
+    "text": "A LangGraph-style memory flow can use nodes such as retrieve_memory, build_prompt, call_model, and save_memory. The state object carries messages, profile facts, episodes, semantic hits, and memory budget.",
+    "tags": ["langgraph", "state", "router", "prompt"]
+  },
+  {
+    "id": "doc-privacy",
+    "title": "Privacy and Deletion",
+    "text": "Memory systems should minimize personal data, request consent for sensitive information, support deletion, and apply TTL policies. Profile and episodic memory are usually the most privacy-sensitive stores.",
+    "tags": ["privacy", "pii", "deletion", "ttl", "consent"]
+  },
+  {
+    "id": "doc-redis",
+    "title": "Redis for Long-Term Memory",
+    "text": "Redis can store long-term profile facts as hashes and session events as lists. TTL can expire stale preferences or temporary session facts.",
+    "tags": ["redis", "profile", "ttl", "long-term"]
+  },
+  {
+    "id": "doc-docker-debug",
+    "title": "Docker Compose Debug Lesson",
+    "text": "Inside a Docker Compose network, services should call each other by service name rather than localhost. For example, an app container should call http://api:8000 if the service is named api.",
+    "tags": ["docker", "debug", "service", "localhost"]
+  },
+  {
+    "id": "doc-async",
+    "title": "Async Await Explanation",
+    "text": "For beginners, async/await is easiest to explain as cooperative waiting: await pauses the current coroutine so the event loop can run other work instead of blocking the whole program.",
+    "tags": ["async", "await", "beginner", "python"]
+  }
+]
