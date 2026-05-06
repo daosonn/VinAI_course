@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
@@ -40,6 +41,79 @@ def overlap_score(query: str, text: str) -> int:
     return len(normalize_words(query) & normalize_words(text))
 
 
+def deaccent_vietnamese(text: str) -> str:
+    replacements = {
+        "à": "a",
+        "á": "a",
+        "ạ": "a",
+        "ả": "a",
+        "ã": "a",
+        "â": "a",
+        "ầ": "a",
+        "ấ": "a",
+        "ậ": "a",
+        "ẩ": "a",
+        "ẫ": "a",
+        "ă": "a",
+        "ằ": "a",
+        "ắ": "a",
+        "ặ": "a",
+        "ẳ": "a",
+        "ẵ": "a",
+        "è": "e",
+        "é": "e",
+        "ẹ": "e",
+        "ẻ": "e",
+        "ẽ": "e",
+        "ê": "e",
+        "ề": "e",
+        "ế": "e",
+        "ệ": "e",
+        "ể": "e",
+        "ễ": "e",
+        "ì": "i",
+        "í": "i",
+        "ị": "i",
+        "ỉ": "i",
+        "ĩ": "i",
+        "ò": "o",
+        "ó": "o",
+        "ọ": "o",
+        "ỏ": "o",
+        "õ": "o",
+        "ô": "o",
+        "ồ": "o",
+        "ố": "o",
+        "ộ": "o",
+        "ổ": "o",
+        "ỗ": "o",
+        "ơ": "o",
+        "ờ": "o",
+        "ớ": "o",
+        "ợ": "o",
+        "ở": "o",
+        "ỡ": "o",
+        "ù": "u",
+        "ú": "u",
+        "ụ": "u",
+        "ủ": "u",
+        "ũ": "u",
+        "ư": "u",
+        "ừ": "u",
+        "ứ": "u",
+        "ự": "u",
+        "ử": "u",
+        "ữ": "u",
+        "ỳ": "y",
+        "ý": "y",
+        "ỵ": "y",
+        "ỷ": "y",
+        "ỹ": "y",
+        "đ": "d",
+    }
+    return "".join(replacements.get(char, replacements.get(char.lower(), char)) for char in text.lower())
+
+
 class MemoryState(TypedDict):
     messages: list[dict[str, str]]
     user_profile: dict[str, Any]
@@ -49,6 +123,7 @@ class MemoryState(TypedDict):
     injected_prompt: str
     memory_budget: int
     route: dict[str, bool]
+    llm_info: dict[str, Any]
 
 
 class ShortTermMemory:
@@ -243,9 +318,18 @@ class MemoryRouter:
 
     def route(self, query: str) -> dict[str, bool]:
         lowered = query.lower()
-        wants_profile = any(keyword in lowered for keyword in self.profile_keywords)
-        wants_episode = any(keyword in lowered for keyword in self.episodic_keywords)
-        wants_semantic = any(keyword in lowered for keyword in self.semantic_keywords)
+        ascii_lowered = deaccent_vietnamese(query)
+        wants_profile = any(keyword in lowered for keyword in self.profile_keywords) or any(
+            keyword in ascii_lowered
+            for keyword in ["ten", "name", "thich", "khong thich", "di ung", "ngon ngu", "style", "phong cach"]
+        )
+        wants_episode = any(keyword in lowered for keyword in self.episodic_keywords) or any(
+            keyword in ascii_lowered for keyword in ["lan truoc", "truoc day", "da tung", "debug", "episode", "outcome"]
+        )
+        wants_semantic = any(keyword in lowered for keyword in self.semantic_keywords) or any(
+            keyword in ascii_lowered
+            for keyword in ["giai thich", "khai niem", "ttl", "context", "vector", "semantic", "privacy", "langgraph", "redis", "chroma"]
+        )
         return {
             "short_term": True,
             "profile": wants_profile or not (wants_episode or wants_semantic),
@@ -256,10 +340,34 @@ class MemoryRouter:
 
 def extract_profile_facts(text: str) -> dict[str, str]:
     lowered = text.lower()
+    ascii_lowered = deaccent_vietnamese(text)
     facts: dict[str, str] = {}
+    asks_for_memory = any(
+        marker in ascii_lowered
+        for marker in [
+            "?",
+            " gi",
+            " la gi",
+            " ten toi la gi",
+            " toi ten la gi",
+            " la ai",
+            " ten gi",
+            " nao",
+            " nhac lai",
+            " vay",
+        ]
+    )
+
+    correction_name_match = None
+    if "khong phai" in ascii_lowered or "a nham" in ascii_lowered or "nham" in ascii_lowered:
+        correction_name_match = re.search(r"(?:toi la|minh la|ten toi la|toi ten la)\s+([a-zA-ZÀ-ỹ\s]+)", ascii_lowered, re.I)
+    if correction_name_match and not asks_for_memory:
+        facts["name"] = correction_name_match.group(1).strip(" .,!").title()
 
     name_match = re.search(r"(?:tên tôi là|tôi tên là|mình tên là)\s+([A-Za-zÀ-ỹ\s]+)", text, re.I)
-    if name_match:
+    if not name_match:
+        name_match = re.search(r"(?:ten toi la|toi ten la|minh ten la|t.n t.i l.)\s+([A-Za-zÀ-ỹ\s]+)", ascii_lowered, re.I)
+    if name_match and not asks_for_memory and "name" not in facts:
         facts["name"] = name_match.group(1).strip(" .,!").title()
 
     allergy_correction = re.search(
@@ -272,25 +380,44 @@ def extract_profile_facts(text: str) -> dict[str, str]:
         facts["allergy"] = allergy_correction.group(1).strip(" .,!").lower()
     elif allergy_match:
         facts["allergy"] = allergy_match.group(1).strip(" .,!").lower()
+    else:
+        ascii_allergy_correction = re.search(
+            r"di\s+ung\s+(?:voi\s+)?(.+?)\s+chu khong phai\s+(.+?)(?:[.!?]|$)",
+            ascii_lowered,
+            re.I,
+        )
+        ascii_allergy_match = re.search(r"di\s+ung\s+(?:voi\s+)?(.+?)(?:[.!?]|$)", ascii_lowered, re.I)
+        if ascii_allergy_correction:
+            facts["allergy"] = ascii_allergy_correction.group(1).strip(" .,!").lower()
+        elif ascii_allergy_match:
+            facts["allergy"] = ascii_allergy_match.group(1).strip(" .,!").lower()
 
     like_match = re.search(r"tôi thích\s+(.+?)(?:[.!?]|$)", text, re.I)
+    if not like_match:
+        like_match = re.search(r"toi thich\s+(.+?)(?:[.!?]|$)", ascii_lowered, re.I)
     if like_match and "không thích" not in lowered:
         facts["likes"] = like_match.group(1).strip(" .,!").lower()
 
     dislike_match = re.search(r"không thích\s+(.+?)(?:[.!?]|$)", text, re.I)
+    if not dislike_match:
+        dislike_match = re.search(r"khong thich\s+(.+?)(?:[.!?]|$)", ascii_lowered, re.I)
     if dislike_match:
         facts["dislikes"] = dislike_match.group(1).strip(" .,!").lower()
 
     language_match = re.search(r"(?:ưu tiên|hãy dùng|trả lời bằng)\s+(tiếng [A-Za-zÀ-ỹ]+)", text, re.I)
+    if not language_match:
+        language_match = re.search(r"(?:uu tien|hay dung|tra loi bang)\s+(tieng [A-Za-zÀ-ỹ]+)", ascii_lowered, re.I)
     if language_match:
         facts["language"] = language_match.group(1).strip(" .,!").lower()
 
-    if "ngắn gọn" in lowered:
+    if "ngắn gọn" in lowered or "ngan gon" in ascii_lowered:
         facts["style"] = "ngắn gọn"
-    elif "thật chi tiết" in lowered or "chi tiết" in lowered:
+    elif "thật chi tiết" in lowered or "chi tiết" in lowered or "chi tiet" in ascii_lowered:
         facts["style"] = "chi tiết, dễ hiểu"
 
     skill_match = re.search(r"tôi đang học\s+(.+?)(?:[.!?]|$)", text, re.I)
+    if not skill_match:
+        skill_match = re.search(r"toi dang hoc\s+(.+?)(?:[.!?]|$)", ascii_lowered, re.I)
     if skill_match:
         facts["learning"] = skill_match.group(1).strip(" .,!").lower()
 
@@ -299,19 +426,32 @@ def extract_profile_facts(text: str) -> dict[str, str]:
 
 def extract_episode(text: str) -> dict[str, str] | None:
     lowered = text.lower()
-    has_outcome = "kết quả:" in lowered or "outcome:" in lowered or "hoàn tất" in lowered
+    ascii_lowered = deaccent_vietnamese(text)
+    has_outcome = (
+        "kết quả:" in lowered
+        or "outcome:" in lowered
+        or "hoàn tất" in lowered
+        or "ket qua:" in ascii_lowered
+        or "hoan tat" in ascii_lowered
+    )
     if not has_outcome:
         return None
     task = "general task"
     task_match = re.search(r"(?:task|nhiệm vụ|hôm nay ta)\s*:?\s*(.+?)(?:\.|;|,|kết quả:|outcome:|$)", text, re.I)
+    if not task_match:
+        task_match = re.search(r"(?:task|nhiem vu|hom nay ta)\s*:?\s*(.+?)(?:\.|;|,|ket qua:|outcome:|$)", ascii_lowered, re.I)
     if task_match:
         task = task_match.group(1).strip(" .,!").lower()
     outcome = "completed"
     outcome_match = re.search(r"(?:kết quả|outcome)\s*:\s*(.+?)(?:[.!?]|$)", text, re.I)
+    if not outcome_match:
+        outcome_match = re.search(r"(?:ket qua|outcome)\s*:\s*(.+?)(?:[.!?]|$)", ascii_lowered, re.I)
     if outcome_match:
         outcome = outcome_match.group(1).strip(" .,!").lower()
     reflection = "Prefer the approach that produced the successful outcome."
     reflection_match = re.search(r"(?:bài học|reflection)\s*:\s*(.+?)(?:[.!?]|$)", text, re.I)
+    if not reflection_match:
+        reflection_match = re.search(r"(?:bai hoc|reflection)\s*:\s*(.+?)(?:[.!?]|$)", ascii_lowered, re.I)
     if reflection_match:
         reflection = reflection_match.group(1).strip(" .,!").lower()
     return {
@@ -326,6 +466,102 @@ def plain_profile(profile: dict[str, Any]) -> dict[str, Any]:
     return {key: meta.get("value") for key, meta in profile.items()}
 
 
+class RealLLMClient:
+    """Small wrapper that calls a real hosted LLM while keeping the lab offline-friendly."""
+
+    def __init__(self, provider: str = "auto", model: str | None = None) -> None:
+        self._load_env()
+        self.provider = provider or os.getenv("LLM_PROVIDER") or "auto"
+        self.model = model
+
+    def _load_env(self) -> None:
+        try:
+            from dotenv import load_dotenv
+
+            load_dotenv(".env")
+        except Exception:
+            pass
+
+    def generate(self, query: str, memory_prompt: str) -> tuple[str, dict[str, Any]]:
+        errors: list[str] = []
+        provider = self.provider.lower()
+
+        if provider in {"auto", "openai"} and os.getenv("OPENAI_API_KEY"):
+            try:
+                return self._generate_openai(query, memory_prompt)
+            except Exception as exc:
+                errors.append(f"openai: {self._safe_error(exc)}")
+                if provider == "openai":
+                    raise
+
+        if provider in {"auto", "gemini"} and os.getenv("GEMINI_API_KEY"):
+            try:
+                return self._generate_gemini(query, memory_prompt)
+            except Exception as exc:
+                errors.append(f"gemini: {self._safe_error(exc)}")
+                if provider == "gemini":
+                    raise
+
+        if not errors:
+            errors.append("No usable API key found. Set OPENAI_API_KEY or GEMINI_API_KEY in .env.")
+        raise RuntimeError(" | ".join(errors))
+
+    def _safe_error(self, exc: Exception) -> str:
+        text = str(exc)
+        lowered = text.lower()
+        if "invalid_api_key" in lowered or "incorrect api key" in lowered:
+            return f"{type(exc).__name__}: invalid API key"
+        if "resource_exhausted" in lowered or "quota" in lowered or "rate limit" in lowered:
+            return f"{type(exc).__name__}: quota or rate limit exceeded"
+        text = re.sub(r"sk-[A-Za-z0-9_\-]+", "sk-***", text)
+        text = re.sub(r"AIza[A-Za-z0-9_\-]+", "AIza***", text)
+        if len(text) > 350:
+            text = text[:350] + "..."
+        return f"{type(exc).__name__}: {text}"
+
+    def _generate_openai(self, query: str, memory_prompt: str) -> tuple[str, dict[str, Any]]:
+        from openai import OpenAI
+
+        model = self.model or os.getenv("OPENAI_MODEL") or "gpt-4.1-mini"
+        client = OpenAI()
+        response = client.responses.create(
+            model=model,
+            input=[
+                {
+                    "role": "system",
+                    "content": self._system_instructions(memory_prompt),
+                },
+                {
+                    "role": "user",
+                    "content": query,
+                },
+            ],
+        )
+        return response.output_text.strip(), {"used": True, "provider": "openai", "model": model, "error": None}
+
+    def _generate_gemini(self, query: str, memory_prompt: str) -> tuple[str, dict[str, Any]]:
+        from google import genai
+
+        model = self.model or os.getenv("GEMINI_MODEL") or "gemini-2.0-flash"
+        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        response = client.models.generate_content(
+            model=model,
+            contents=f"{self._system_instructions(memory_prompt)}\n\nUSER QUESTION:\n{query}",
+        )
+        return response.text.strip(), {"used": True, "provider": "gemini", "model": model, "error": None}
+
+    def _system_instructions(self, memory_prompt: str) -> str:
+        return (
+            f"{memory_prompt}\n\n"
+            "ANSWERING RULES:\n"
+            "- Answer in Vietnamese.\n"
+            "- Use MEMORY CONTEXT when it is relevant.\n"
+            "- If the user provides a new profile fact, acknowledge that it will be remembered.\n"
+            "- If memory is missing, say that the current memory does not contain it.\n"
+            "- Be concise but explain enough for a beginner."
+        )
+
+
 class MultiMemoryAgent:
     def __init__(
         self,
@@ -333,10 +569,21 @@ class MultiMemoryAgent:
         storage_dir: str | Path = "memory_store",
         docs_path: str | Path = "data/domain_docs.json",
         memory_budget: int = 1800,
+        use_llm: bool = False,
+        llm_provider: str | None = None,
+        llm_model: str | None = None,
     ) -> None:
         storage_path = Path(storage_dir)
         self.user_id = user_id
         self.memory_budget = memory_budget
+        self.use_llm = use_llm
+        self.llm_client = RealLLMClient(provider=llm_provider, model=llm_model) if use_llm else None
+        self.last_llm_info: dict[str, Any] = {
+            "used": False,
+            "provider": "rule-based",
+            "model": None,
+            "error": None,
+        }
         self.short_term = ShortTermMemory(max_messages=8)
         self.profile = LongTermProfileMemory(storage_path / "profiles.json")
         self.episodic = EpisodicMemory(storage_path / "episodes.json")
@@ -404,20 +651,61 @@ class MultiMemoryAgent:
             "injected_prompt": "",
             "memory_budget": self.memory_budget,
             "route": {},
+            "llm_info": self.last_llm_info,
         }
         state = self.retrieve_memory(state)
         response = self._generate_response(user_message, state)
+        state["llm_info"] = self.last_llm_info
         self.save_memory(user_message, response)
         return response, state
 
     def _generate_response(self, query: str, state: MemoryState) -> str:
+        if self.use_llm and self.llm_client:
+            try:
+                response, info = self.llm_client.generate(query, state["injected_prompt"])
+                self.last_llm_info = info
+                return response
+            except Exception as exc:
+                self.last_llm_info = {
+                    "used": False,
+                    "provider": self.llm_client.provider,
+                    "model": self.llm_client.model,
+                    "error": f"{type(exc).__name__}: {exc}",
+                }
+                fallback = self._generate_rule_based_response(query, state)
+                return f"[LLM unavailable, fallback rule-based] {fallback}"
+        self.last_llm_info = {
+            "used": False,
+            "provider": "rule-based",
+            "model": None,
+            "error": None,
+        }
+        return self._generate_rule_based_response(query, state)
+
+    def _generate_rule_based_response(self, query: str, state: MemoryState) -> str:
         lowered = query.lower()
         profile = plain_profile(state["user_profile"])
+        learned_facts = extract_profile_facts(query)
+        ascii_lowered = deaccent_vietnamese(query)
+        asks_for_memory = any(
+            marker in ascii_lowered for marker in ["?", " gi", " nao", "nhac lai", "vay", "la ai"]
+        )
 
-        if "tên tôi" in lowered or "name của tôi" in lowered:
+        if learned_facts and not asks_for_memory:
+            keys = ", ".join(sorted(learned_facts))
+            return f"Mình đã ghi nhớ các profile fact: {keys}."
+
+        if (
+            "tên tôi" in lowered
+            or "name của tôi" in lowered
+            or "ten toi" in ascii_lowered
+            or "toi ten" in ascii_lowered
+        ):
             return f"Tên của bạn là {profile['name']}." if profile.get("name") else "Mình chưa có tên của bạn trong memory."
 
-        if "dị ứng" in lowered and ("tôi dị ứng gì" in lowered or "allergy" in lowered):
+        if ("dị ứng" in lowered or "di ung" in ascii_lowered) and (
+            "tôi dị ứng gì" in lowered or "toi di ung gi" in ascii_lowered or "allergy" in lowered
+        ):
             return (
                 f"Bạn đang dị ứng {profile['allergy']}."
                 if profile.get("allergy")
@@ -444,11 +732,6 @@ class MultiMemoryAgent:
         if state["semantic_hits"]:
             hit = state["semantic_hits"][0]
             return f"Theo semantic memory ({hit['title']}): {hit['text']}"
-
-        learned_facts = extract_profile_facts(query)
-        if learned_facts:
-            keys = ", ".join(sorted(learned_facts))
-            return f"Mình đã ghi nhớ các profile fact: {keys}."
 
         if extract_episode(query):
             return "Mình đã lưu episode này để lần sau có thể nhắc lại kinh nghiệm và kết quả."

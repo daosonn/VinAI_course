@@ -192,6 +192,28 @@ print(agent.answer("Tên tôi là Linh.")[0])
 print(agent.answer("Nhắc lại tên tôi là gì?")[0])
 ```
 
+Chạy visualizer với API thật:
+
+```bash
+python visualize_memory_demo.py
+```
+
+Visualizer sẽ dùng `OPENAI_API_KEY` trong `.env`. Nếu muốn ép dùng OpenAI, đặt:
+
+```text
+LLM_PROVIDER=openai
+OPENAI_MODEL=gpt-4.1-mini
+```
+
+Mỗi lượt hỏi sẽ hiện:
+
+- LLM provider/model thật đang dùng.
+- Router bật memory nào.
+- Data retrieve được từ profile/episode/semantic memory.
+- Prompt đã inject memory.
+- File JSON đang lưu profile/episode.
+- Cách compact bằng sliding window và memory budget.
+
 ## 10. Khi bị hỏi demo nên giải thích thế nào?
 
 Bạn có thể nói:
