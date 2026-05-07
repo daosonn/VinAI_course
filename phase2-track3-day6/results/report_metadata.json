@@ -1,0 +1,54 @@
+{
+  "student_name": "Dao Van Son",
+  "student_id": "2A202600032",
+  "submission_option": "B - GitHub + HuggingFace Hub",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+  "dataset_name": "gbharti/finance-alpaca",
+  "dataset_valid_rows": 68911,
+  "used_samples": 200,
+  "train_samples": 180,
+  "eval_samples": 20,
+  "token_stats": {
+    "min": 24,
+    "max": 1913,
+    "p50": 90,
+    "p95": 322,
+    "p99": 739,
+    "chosen_max_seq_length": 512,
+    "max_seq_cap": 1024
+  },
+  "gpu": {
+    "name": "Tesla T4",
+    "vram_gb": 15.6,
+    "cuda": "12.8",
+    "pytorch": "2.10.0+cu128"
+  },
+  "libraries": {
+    "unsloth": "2026.5.2",
+    "trl": "0.15.2",
+    "transformers": "5.5.0"
+  },
+  "training_config": {
+    "epochs": 3,
+    "learning_rate": 0.0002,
+    "effective_batch_size": 8,
+    "optimizer": "adamw_8bit",
+    "warmup_ratio": 0.1,
+    "scheduler": "cosine",
+    "fp16": true,
+    "bf16": false,
+    "eval_strategy": "no"
+  },
+  "lora_target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "hf_profile": "https://huggingface.co/daosonn",
+  "hf_expected_adapter_repo": "https://huggingface.co/daosonn/lab21-llama32-3b-finance-alpaca-lora-r16",
+  "hf_push_note": "Notebook push failed because HF_USERNAME was set to the full URL; use namespace daosonn when pushing."
+}
